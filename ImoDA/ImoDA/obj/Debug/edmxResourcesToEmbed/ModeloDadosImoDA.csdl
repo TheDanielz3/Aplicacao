@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="Model1Container" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ClienteSet" EntityType="Model1.Cliente" />
+    <EntitySet Name="CasaSet" EntityType="Model1.Casa" />
+    <EntitySet Name="ArrendamentoSet" EntityType="Model1.Arrendamento" />
+    <EntitySet Name="LimpezaSet" EntityType="Model1.Limpeza" />
+    <EntitySet Name="ServicoSet" EntityType="Model1.Servico" />
+    <EntitySet Name="VendaSet" EntityType="Model1.Venda" />
+    <EntitySet Name="CasaVendavelSet" EntityType="Model1.CasaVendavel" />
+    <EntitySet Name="CasaArrendavelSet" EntityType="Model1.CasaArrendavel" />
+  </EntityContainer>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="idCliente" />
+    </Key>
+    <Property Name="idCliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="String" Nullable="false" />
+    <Property Name="NIF" Type="String" Nullable="false" />
+    <Property Name="Morada" Type="String" Nullable="false" />
+    <Property Name="Contacto" Type="String" Nullable="false" />
+    <NavigationProperty Name="Arrendamentos" />
+    <NavigationProperty Name="Aquisicoes" />
+    <NavigationProperty Name="Casas" />
+  </EntityType>
+  <EntityType Name="Casa">
+    <Key>
+      <PropertyRef Name="IdCasa" />
+    </Key>
+    <Property Name="IdCasa" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Localidade" Type="String" Nullable="false" />
+    <Property Name="Rua" Type="String" Nullable="false" />
+    <Property Name="Numero" Type="String" Nullable="false" />
+    <Property Name="Andar" Type="String" Nullable="false" />
+    <Property Name="Area" Type="String" Nullable="false" />
+    <Property Name="NumeroAssoalhadas" Type="String" Nullable="false" />
+    <Property Name="NumeroWC" Type="String" Nullable="false" />
+    <Property Name="NumeroPisos" Type="String" Nullable="false" />
+    <Property Name="Tipo" Type="String" Nullable="false" />
+    <NavigationProperty Name="Proprietario" />
+    <NavigationProperty Name="Limpezas" />
+  </EntityType>
+  <EntityType Name="Arrendamento">
+    <Key>
+      <PropertyRef Name="IdArrendamento" />
+    </Key>
+    <Property Name="IdArrendamento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="InicioContrato" Type="String" Nullable="false" />
+    <Property Name="DuracaoMeses" Type="String" Nullable="false" />
+    <Property Name="Renovavel" Type="String" Nullable="false" />
+    <NavigationProperty Name="Arrendatario" />
+    <NavigationProperty Name="CasaArrendavel" />
+  </EntityType>
+  <EntityType Name="Limpeza">
+    <Key>
+      <PropertyRef Name="IdLimpeza" />
+    </Key>
+    <Property Name="IdLimpeza" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Data" Type="String" Nullable="false" />
+    <NavigationProperty Name="Servicos" />
+    <NavigationProperty Name="Casa" />
+  </EntityType>
+  <EntityType Name="Servico">
+    <Key>
+      <PropertyRef Name="IdServico" />
+    </Key>
+    <Property Name="IdServico" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descricao" Type="String" Nullable="false" />
+    <Property Name="Valor" Type="String" Nullable="false" />
+    <Property Name="Unidades" Type="String" Nullable="false" />
+    <NavigationProperty Name="Limpeza" />
+  </EntityType>
+  <EntityType Name="Venda">
+    <Key>
+      <PropertyRef Name="IdVenda" />
+    </Key>
+    <Property Name="IdVenda" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DataVenda" Type="String" Nullable="false" />
+    <Property Name="ValorNegociado" Type="String" Nullable="false" />
+    <Property Name="ComissaoNegocio" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CasaVendavel">
+    <Property Name="ValorBaseVenda" Type="String" Nullable="false" />
+    <Property Name="ValorComissao" Type="String" Nullable="false" />
+    <NavigationProperty Name="Venda" />
+  </EntityType>
+  <EntityType Name="CasaArrendavel">
+    <Property Name="ValorBaseMes" Type="String" Nullable="false" />
+    <Property Name="Comissao" Type="String" Nullable="false" />
+    <NavigationProperty Name="Arrendamentos" />
+  </EntityType>
+</Schema>
