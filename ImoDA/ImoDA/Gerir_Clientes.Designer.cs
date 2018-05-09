@@ -36,9 +36,11 @@
             this.colunaNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colunaNIF = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colunaContacto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fieldMorada = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonApagarCliente = new System.Windows.Forms.Button();
             this.groupBoxDetalhesClientes = new System.Windows.Forms.GroupBox();
             this.listBoxAquisicoes = new System.Windows.Forms.ListBox();
+            this.listBoxArrendamentos = new System.Windows.Forms.ListBox();
             this.labelAquisicoes = new System.Windows.Forms.Label();
             this.labelArrendamentos = new System.Windows.Forms.Label();
             this.listBoxCasas = new System.Windows.Forms.ListBox();
@@ -54,9 +56,7 @@
             this.labelMorada = new System.Windows.Forms.Label();
             this.labelNIF = new System.Windows.Forms.Label();
             this.labelNome = new System.Windows.Forms.Label();
-            this.listBoxArrendamentos = new System.Windows.Forms.ListBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.fieldMorada = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCliente)).BeginInit();
             this.groupBoxDetalhesClientes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -115,6 +115,11 @@
             this.colunaContacto.HeaderText = "Contacto";
             this.colunaContacto.Name = "colunaContacto";
             // 
+            // fieldMorada
+            // 
+            this.fieldMorada.HeaderText = "Morada";
+            this.fieldMorada.Name = "fieldMorada";
+            // 
             // buttonApagarCliente
             // 
             this.buttonApagarCliente.Location = new System.Drawing.Point(13, 696);
@@ -157,6 +162,14 @@
             this.listBoxAquisicoes.Name = "listBoxAquisicoes";
             this.listBoxAquisicoes.Size = new System.Drawing.Size(277, 95);
             this.listBoxAquisicoes.TabIndex = 16;
+            // 
+            // listBoxArrendamentos
+            // 
+            this.listBoxArrendamentos.FormattingEnabled = true;
+            this.listBoxArrendamentos.Location = new System.Drawing.Point(12, 368);
+            this.listBoxArrendamentos.Name = "listBoxArrendamentos";
+            this.listBoxArrendamentos.Size = new System.Drawing.Size(277, 95);
+            this.listBoxArrendamentos.TabIndex = 14;
             // 
             // labelAquisicoes
             // 
@@ -286,14 +299,6 @@
             this.labelNome.TabIndex = 0;
             this.labelNome.Text = "Nome:";
             // 
-            // listBoxArrendamentos
-            // 
-            this.listBoxArrendamentos.FormattingEnabled = true;
-            this.listBoxArrendamentos.Location = new System.Drawing.Point(12, 368);
-            this.listBoxArrendamentos.Name = "listBoxArrendamentos";
-            this.listBoxArrendamentos.Size = new System.Drawing.Size(277, 95);
-            this.listBoxArrendamentos.TabIndex = 14;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -303,11 +308,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
-            // 
-            // fieldMorada
-            // 
-            this.fieldMorada.HeaderText = "Morada";
-            this.fieldMorada.Name = "fieldMorada";
             // 
             // Gerir_Clientes
             // 
@@ -324,6 +324,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Gerir_Clientes";
             this.Text = "Clientes";
+            this.Load += new System.EventHandler(this.Gerir_Clientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCliente)).EndInit();
             this.groupBoxDetalhesClientes.ResumeLayout(false);
             this.groupBoxDetalhesClientes.PerformLayout();
