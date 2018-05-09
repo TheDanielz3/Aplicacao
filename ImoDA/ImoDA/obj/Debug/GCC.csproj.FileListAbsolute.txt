@@ -61,3 +61,27 @@ C:\Users\Diogo\Desktop\ImoDA\ImoDA\obj\Debug\GCC.Gerir_Clientes.resources
 C:\Users\Diogo\Desktop\ImoDA\ImoDA\obj\Debug\GCC.Limpeza.resources
 C:\Users\Diogo\Desktop\ImoDA\ImoDA\obj\Debug\GCC.MenuPrincipal.resources
 C:\Users\Diogo\Desktop\ImoDA\ImoDA\obj\Debug\GCC.Venda_de_Casa.resources
+C:\Users\Diogo\IPLeiria\Microsoft 2.0 - Documentos\DA\ImoDA\ImoDA\bin\Debug\GCC.mdf
+C:\Users\Diogo\IPLeiria\Microsoft 2.0 - Documentos\DA\ImoDA\ImoDA\bin\Debug\GCC_log.ldf
+C:\Users\Diogo\IPLeiria\Microsoft 2.0 - Documentos\DA\ImoDA\ImoDA\bin\Debug\ImoDA.exe.config
+C:\Users\Diogo\IPLeiria\Microsoft 2.0 - Documentos\DA\ImoDA\ImoDA\bin\Debug\ImoDA.exe
+C:\Users\Diogo\IPLeiria\Microsoft 2.0 - Documentos\DA\ImoDA\ImoDA\bin\Debug\ImoDA.pdb
+C:\Users\Diogo\IPLeiria\Microsoft 2.0 - Documentos\DA\ImoDA\ImoDA\bin\Debug\EntityFramework.dll
+C:\Users\Diogo\IPLeiria\Microsoft 2.0 - Documentos\DA\ImoDA\ImoDA\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Diogo\IPLeiria\Microsoft 2.0 - Documentos\DA\ImoDA\ImoDA\bin\Debug\EntityFramework.xml
+C:\Users\Diogo\IPLeiria\Microsoft 2.0 - Documentos\DA\ImoDA\ImoDA\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Diogo\IPLeiria\Microsoft 2.0 - Documentos\DA\ImoDA\ImoDA\obj\Debug\GCC.csprojResolveAssemblyReference.cache
+C:\Users\Diogo\IPLeiria\Microsoft 2.0 - Documentos\DA\ImoDA\ImoDA\obj\Debug\GCC.FormArrendamentos.resources
+C:\Users\Diogo\IPLeiria\Microsoft 2.0 - Documentos\DA\ImoDA\ImoDA\obj\Debug\GCC.Gerir_Casas.resources
+C:\Users\Diogo\IPLeiria\Microsoft 2.0 - Documentos\DA\ImoDA\ImoDA\obj\Debug\GCC.Gerir_Clientes.resources
+C:\Users\Diogo\IPLeiria\Microsoft 2.0 - Documentos\DA\ImoDA\ImoDA\obj\Debug\GCC.Limpeza.resources
+C:\Users\Diogo\IPLeiria\Microsoft 2.0 - Documentos\DA\ImoDA\ImoDA\obj\Debug\GCC.MenuPrincipal.resources
+C:\Users\Diogo\IPLeiria\Microsoft 2.0 - Documentos\DA\ImoDA\ImoDA\obj\Debug\ImoDA.Properties.Resources.resources
+C:\Users\Diogo\IPLeiria\Microsoft 2.0 - Documentos\DA\ImoDA\ImoDA\obj\Debug\GCC.Venda_de_Casa.resources
+C:\Users\Diogo\IPLeiria\Microsoft 2.0 - Documentos\DA\ImoDA\ImoDA\obj\Debug\GCC.csproj.GenerateResource.cache
+C:\Users\Diogo\IPLeiria\Microsoft 2.0 - Documentos\DA\ImoDA\ImoDA\obj\Debug\GCC.csproj.CoreCompileInputs.cache
+C:\Users\Diogo\IPLeiria\Microsoft 2.0 - Documentos\DA\ImoDA\ImoDA\obj\Debug\GCC.csproj.CopyComplete
+C:\Users\Diogo\IPLeiria\Microsoft 2.0 - Documentos\DA\ImoDA\ImoDA\obj\Debug\ImoDA.exe
+C:\Users\Diogo\IPLeiria\Microsoft 2.0 - Documentos\DA\ImoDA\ImoDA\obj\Debug\ImoDA.pdb
+C:\Users\Diogo\IPLeiria\Microsoft 2.0 - Documentos\DA\ImoDA\ImoDA\obj\Debug\GCC.csprojAssemblyReference.cache
+C:\Users\Diogo\IPLeiria\Microsoft 2.0 - Documentos\DA\ImoDA\ImoDA\obj\Debug\ImoDA.Limpeza.resources

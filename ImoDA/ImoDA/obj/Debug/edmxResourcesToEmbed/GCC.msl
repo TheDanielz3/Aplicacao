@@ -1,6 +1,124 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
-  <Alias Key="Model" Value="GCC" />
-  <Alias Key="Target" Value="GCC.Store" />
-  <EntityContainerMapping CdmEntityContainer="GCCContainer" StorageEntityContainer="GCCTargetContainer" />
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GCCStoreContainer" CdmEntityContainer="GCCContainer">
+    <EntitySetMapping Name="ClienteSet">
+      <EntityTypeMapping TypeName="IsTypeOf(GCC.Cliente)">
+        <MappingFragment StoreEntitySet="ClienteSet">
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="NIF" ColumnName="NIF" />
+          <ScalarProperty Name="Morada" ColumnName="Morada" />
+          <ScalarProperty Name="Contacto" ColumnName="Contacto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArrendamentoSet">
+      <EntityTypeMapping TypeName="IsTypeOf(GCC.Arrendamento)">
+        <MappingFragment StoreEntitySet="ArrendamentoSet">
+          <ScalarProperty Name="IdArrendamento" ColumnName="IdArrendamento" />
+          <ScalarProperty Name="InicioContrato" ColumnName="InicioContrato" />
+          <ScalarProperty Name="DuracaoMeses" ColumnName="DuracaoMeses" />
+          <ScalarProperty Name="Renovavel" ColumnName="Renovavel" />
+          <ScalarProperty Name="ClienteIdCliente" ColumnName="ClienteIdCliente" />
+          <ScalarProperty Name="ClienteIdCliente1" ColumnName="ClienteIdCliente1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CasaSet">
+      <EntityTypeMapping TypeName="IsTypeOf(GCC.Casa)">
+        <MappingFragment StoreEntitySet="CasaSet">
+          <ScalarProperty Name="IdCasa" ColumnName="IdCasa" />
+          <ScalarProperty Name="Localidade" ColumnName="Localidade" />
+          <ScalarProperty Name="Rua" ColumnName="Rua" />
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+          <ScalarProperty Name="Andar" ColumnName="Andar" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="NumeroAssoalhadas" ColumnName="NumeroAssoalhadas" />
+          <ScalarProperty Name="NumeroWC" ColumnName="NumeroWC" />
+          <ScalarProperty Name="NumeroPisos" ColumnName="NumeroPisos" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="ClienteIdCliente" ColumnName="ClienteIdCliente" />
+          <ScalarProperty Name="ClienteIdCliente1" ColumnName="ClienteIdCliente1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(GCC.CasaArrendavel)">
+        <MappingFragment StoreEntitySet="CasaSet_CasaArrendavel">
+          <ScalarProperty Name="IdCasa" ColumnName="IdCasa" />
+          <ScalarProperty Name="ValorBaseMes" ColumnName="ValorBaseMes" />
+          <ScalarProperty Name="Comissao" ColumnName="Comissao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(GCC.CasaVendavel)">
+        <MappingFragment StoreEntitySet="CasaSet_CasaVendavel">
+          <ScalarProperty Name="IdCasa" ColumnName="IdCasa" />
+          <ScalarProperty Name="ValorBaseVenda" ColumnName="ValorBaseVenda" />
+          <ScalarProperty Name="ValorComissao" ColumnName="ValorComissao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LimpezaSet">
+      <EntityTypeMapping TypeName="IsTypeOf(GCC.Limpeza)">
+        <MappingFragment StoreEntitySet="LimpezaSet">
+          <ScalarProperty Name="IdLimpeza" ColumnName="IdLimpeza" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServicoSet">
+      <EntityTypeMapping TypeName="IsTypeOf(GCC.Servico)">
+        <MappingFragment StoreEntitySet="ServicoSet">
+          <ScalarProperty Name="IdServico" ColumnName="IdServico" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="Unidades" ColumnName="Unidades" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VendaSet">
+      <EntityTypeMapping TypeName="IsTypeOf(GCC.Venda)">
+        <MappingFragment StoreEntitySet="VendaSet">
+          <ScalarProperty Name="IdVenda" ColumnName="IdVenda" />
+          <ScalarProperty Name="DataVenda" ColumnName="DataVenda" />
+          <ScalarProperty Name="ValorNegociado" ColumnName="ValorNegociado" />
+          <ScalarProperty Name="ComissaoNegocio" ColumnName="ComissaoNegocio" />
+          <ScalarProperty Name="ClienteIdCliente" ColumnName="ClienteIdCliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="ArrendamentoCasaArrendavel" TypeName="GCC.ArrendamentoCasaArrendavel" StoreEntitySet="ArrendamentoSet">
+      <EndProperty Name="CasaArrendavel">
+        <ScalarProperty Name="IdCasa" ColumnName="CasaArrendavel_IdCasa" />
+      </EndProperty>
+      <EndProperty Name="Arrendamento">
+        <ScalarProperty Name="IdArrendamento" ColumnName="IdArrendamento" />
+      </EndProperty>
+      <Condition ColumnName="CasaArrendavel_IdCasa" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="VendaCasaVendavel" TypeName="GCC.VendaCasaVendavel" StoreEntitySet="VendaSet">
+      <EndProperty Name="CasaVendavel">
+        <ScalarProperty Name="IdCasa" ColumnName="CasaVendavel_IdCasa" />
+      </EndProperty>
+      <EndProperty Name="Venda">
+        <ScalarProperty Name="IdVenda" ColumnName="IdVenda" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="LimpezaCasa" TypeName="GCC.LimpezaCasa" StoreEntitySet="LimpezaSet">
+      <EndProperty Name="Casa">
+        <ScalarProperty Name="IdCasa" ColumnName="Casa_IdCasa" />
+      </EndProperty>
+      <EndProperty Name="Limpeza">
+        <ScalarProperty Name="IdLimpeza" ColumnName="IdLimpeza" />
+      </EndProperty>
+      <Condition ColumnName="Casa_IdCasa" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ServicoLimpeza" TypeName="GCC.ServicoLimpeza" StoreEntitySet="ServicoSet">
+      <EndProperty Name="Limpeza">
+        <ScalarProperty Name="IdLimpeza" ColumnName="Limpeza_IdLimpeza" />
+      </EndProperty>
+      <EndProperty Name="Servico">
+        <ScalarProperty Name="IdServico" ColumnName="IdServico" />
+      </EndProperty>
+      <Condition ColumnName="Limpeza_IdLimpeza" IsNull="false" />
+    </AssociationSetMapping>
+  </EntityContainerMapping>
 </Mapping>

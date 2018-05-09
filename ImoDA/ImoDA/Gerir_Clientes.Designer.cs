@@ -56,6 +56,7 @@
             this.labelNome = new System.Windows.Forms.Label();
             this.listBoxArrendamentos = new System.Windows.Forms.ListBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.fieldMorada = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCliente)).BeginInit();
             this.groupBoxDetalhesClientes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -92,10 +93,11 @@
             this.dataGridViewCliente.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colunaNome,
             this.colunaNIF,
-            this.colunaContacto});
+            this.colunaContacto,
+            this.fieldMorada});
             this.dataGridViewCliente.Location = new System.Drawing.Point(13, 98);
             this.dataGridViewCliente.Name = "dataGridViewCliente";
-            this.dataGridViewCliente.Size = new System.Drawing.Size(343, 592);
+            this.dataGridViewCliente.Size = new System.Drawing.Size(443, 592);
             this.dataGridViewCliente.TabIndex = 3;
             // 
             // colunaNome
@@ -125,6 +127,7 @@
             // groupBoxDetalhesClientes
             // 
             this.groupBoxDetalhesClientes.Controls.Add(this.listBoxAquisicoes);
+            this.groupBoxDetalhesClientes.Controls.Add(this.listBoxArrendamentos);
             this.groupBoxDetalhesClientes.Controls.Add(this.labelAquisicoes);
             this.groupBoxDetalhesClientes.Controls.Add(this.labelArrendamentos);
             this.groupBoxDetalhesClientes.Controls.Add(this.listBoxCasas);
@@ -140,7 +143,7 @@
             this.groupBoxDetalhesClientes.Controls.Add(this.labelMorada);
             this.groupBoxDetalhesClientes.Controls.Add(this.labelNIF);
             this.groupBoxDetalhesClientes.Controls.Add(this.labelNome);
-            this.groupBoxDetalhesClientes.Location = new System.Drawing.Point(382, 98);
+            this.groupBoxDetalhesClientes.Location = new System.Drawing.Point(562, 98);
             this.groupBoxDetalhesClientes.Name = "groupBoxDetalhesClientes";
             this.groupBoxDetalhesClientes.Size = new System.Drawing.Size(316, 601);
             this.groupBoxDetalhesClientes.TabIndex = 5;
@@ -245,6 +248,7 @@
             this.buttonGuardarCliente.TabIndex = 4;
             this.buttonGuardarCliente.Text = "Guardar";
             this.buttonGuardarCliente.UseVisualStyleBackColor = true;
+            this.buttonGuardarCliente.Click += new System.EventHandler(this.buttonGuardarCliente_Click);
             // 
             // labelContacto
             // 
@@ -285,7 +289,7 @@
             // listBoxArrendamentos
             // 
             this.listBoxArrendamentos.FormattingEnabled = true;
-            this.listBoxArrendamentos.Location = new System.Drawing.Point(393, 460);
+            this.listBoxArrendamentos.Location = new System.Drawing.Point(12, 368);
             this.listBoxArrendamentos.Name = "listBoxArrendamentos";
             this.listBoxArrendamentos.Size = new System.Drawing.Size(277, 95);
             this.listBoxArrendamentos.TabIndex = 14;
@@ -300,13 +304,17 @@
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
+            // fieldMorada
+            // 
+            this.fieldMorada.HeaderText = "Morada";
+            this.fieldMorada.Name = "fieldMorada";
+            // 
             // Gerir_Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(719, 721);
+            this.ClientSize = new System.Drawing.Size(890, 721);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.listBoxArrendamentos);
             this.Controls.Add(this.groupBoxDetalhesClientes);
             this.Controls.Add(this.buttonApagarCliente);
             this.Controls.Add(this.dataGridViewCliente);
@@ -354,5 +362,6 @@
         private System.Windows.Forms.Label labelCasas;
         private System.Windows.Forms.ListBox listBoxArrendamentos;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fieldMorada;
     }
 }

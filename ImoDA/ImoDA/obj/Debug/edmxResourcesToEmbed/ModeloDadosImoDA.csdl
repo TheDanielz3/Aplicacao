@@ -7,8 +7,38 @@
     <EntitySet Name="LimpezaSet" EntityType="Model1.Limpeza" />
     <EntitySet Name="ServicoSet" EntityType="Model1.Servico" />
     <EntitySet Name="VendaSet" EntityType="Model1.Venda" />
-    <EntitySet Name="CasaVendavelSet" EntityType="Model1.CasaVendavel" />
-    <EntitySet Name="CasaArrendavelSet" EntityType="Model1.CasaArrendavel" />
+    <AssociationSet Name="ClienteArrendamento" Association="Model1.ClienteArrendamento">
+      <End Role="Cliente" EntitySet="ClienteSet" />
+      <End Role="Arrendamento" EntitySet="ArrendamentoSet" />
+    </AssociationSet>
+    <AssociationSet Name="ClienteCasa" Association="Model1.ClienteCasa">
+      <End Role="Cliente" EntitySet="ClienteSet" />
+      <End Role="Casa" EntitySet="CasaSet" />
+    </AssociationSet>
+    <AssociationSet Name="LimpezaServico" Association="Model1.LimpezaServico">
+      <End Role="Limpeza" EntitySet="LimpezaSet" />
+      <End Role="Servico" EntitySet="ServicoSet" />
+    </AssociationSet>
+    <AssociationSet Name="CasaArrendavelArrendamento" Association="Model1.CasaArrendavelArrendamento">
+      <End Role="CasaArrendavel" EntitySet="CasaSet" />
+      <End Role="Arrendamento" EntitySet="ArrendamentoSet" />
+    </AssociationSet>
+    <AssociationSet Name="CasaArrendamento" Association="Model1.CasaArrendamento">
+      <End Role="Casa" EntitySet="CasaSet" />
+      <End Role="Arrendamento" EntitySet="ArrendamentoSet" />
+    </AssociationSet>
+    <AssociationSet Name="LimpezaCasa" Association="Model1.LimpezaCasa">
+      <End Role="Limpeza" EntitySet="LimpezaSet" />
+      <End Role="Casa" EntitySet="CasaSet" />
+    </AssociationSet>
+    <AssociationSet Name="ClienteVenda" Association="Model1.ClienteVenda">
+      <End Role="Cliente" EntitySet="ClienteSet" />
+      <End Role="Venda" EntitySet="VendaSet" />
+    </AssociationSet>
+    <AssociationSet Name="VendaCasaVendavel" Association="Model1.VendaCasaVendavel">
+      <End Role="Venda" EntitySet="VendaSet" />
+      <End Role="CasaVendavel" EntitySet="CasaSet" />
+    </AssociationSet>
   </EntityContainer>
   <EntityType Name="Cliente">
     <Key>
@@ -39,6 +69,7 @@
     <Property Name="Tipo" Type="String" Nullable="false" />
     <NavigationProperty Name="Proprietario" />
     <NavigationProperty Name="Limpezas" />
+    <Property Name="Cliente_idCliente" Type="Int32" Nullable="false" />
   </EntityType>
   <EntityType Name="Arrendamento">
     <Key>
@@ -50,6 +81,8 @@
     <Property Name="Renovavel" Type="String" Nullable="false" />
     <NavigationProperty Name="Arrendatario" />
     <NavigationProperty Name="CasaArrendavel" />
+    <Property Name="Cliente_idCliente" Type="Int32" Nullable="false" />
+    <Property Name="CasaIdCasa" Type="Int32" Nullable="true" />
   </EntityType>
   <EntityType Name="Limpeza">
     <Key>
@@ -69,6 +102,7 @@
     <Property Name="Valor" Type="String" Nullable="false" />
     <Property Name="Unidades" Type="String" Nullable="false" />
     <NavigationProperty Name="Limpeza" />
+    <Property Name="LimpezaIdLimpeza" Type="Int32" Nullable="true" />
   </EntityType>
   <EntityType Name="Venda">
     <Key>
@@ -78,15 +112,90 @@
     <Property Name="DataVenda" Type="String" Nullable="false" />
     <Property Name="ValorNegociado" Type="String" Nullable="false" />
     <Property Name="ComissaoNegocio" Type="String" Nullable="false" />
+    <NavigationProperty Name="Comprador" Relationship="Model1.ClienteVenda" FromRole="Venda" ToRole="Cliente" />
+    <Property Name="Cliente_idCliente" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CasaVendavel" Relationship="Model1.VendaCasaVendavel" FromRole="Venda" ToRole="CasaVendavel" />
   </EntityType>
-  <EntityType Name="CasaVendavel">
+  <EntityType Name="CasaVendavel" BaseType="Model1.Casa">
     <Property Name="ValorBaseVenda" Type="String" Nullable="false" />
     <Property Name="ValorComissao" Type="String" Nullable="false" />
-    <NavigationProperty Name="Venda" />
+    <NavigationProperty Name="Venda" Relationship="Model1.VendaCasaVendavel" FromRole="CasaVendavel" ToRole="Venda" />
   </EntityType>
-  <EntityType Name="CasaArrendavel">
+  <EntityType Name="CasaArrendavel" BaseType="Model1.Casa">
     <Property Name="ValorBaseMes" Type="String" Nullable="false" />
     <Property Name="Comissao" Type="String" Nullable="false" />
     <NavigationProperty Name="Arrendamentos" />
   </EntityType>
+  <Association Name="ClienteArrendamento">
+    <End Type="Model1.Cliente" Role="Cliente" Multiplicity="1" />
+    <End Type="Model1.Arrendamento" Role="Arrendamento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="idCliente" />
+      </Principal>
+      <Dependent Role="Arrendamento">
+        <PropertyRef Name="Cliente_idCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ClienteCasa">
+    <End Type="Model1.Cliente" Role="Cliente" Multiplicity="1" />
+    <End Type="Model1.Casa" Role="Casa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="idCliente" />
+      </Principal>
+      <Dependent Role="Casa">
+        <PropertyRef Name="Cliente_idCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="LimpezaServico">
+    <End Type="Model1.Limpeza" Role="Limpeza" Multiplicity="0..1" />
+    <End Type="Model1.Servico" Role="Servico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Limpeza">
+        <PropertyRef Name="IdLimpeza" />
+      </Principal>
+      <Dependent Role="Servico">
+        <PropertyRef Name="LimpezaIdLimpeza" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CasaArrendavelArrendamento">
+    <End Type="Model1.CasaArrendavel" Role="CasaArrendavel" Multiplicity="0..1" />
+    <End Type="Model1.Arrendamento" Role="Arrendamento" Multiplicity="*" />
+  </Association>
+  <Association Name="CasaArrendamento">
+    <End Type="Model1.Casa" Role="Casa" Multiplicity="0..1" />
+    <End Type="Model1.Arrendamento" Role="Arrendamento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Casa">
+        <PropertyRef Name="IdCasa" />
+      </Principal>
+      <Dependent Role="Arrendamento">
+        <PropertyRef Name="CasaIdCasa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="LimpezaCasa">
+    <End Type="Model1.Limpeza" Role="Limpeza" Multiplicity="*" />
+    <End Type="Model1.Casa" Role="Casa" Multiplicity="0..1" />
+  </Association>
+  <Association Name="ClienteVenda">
+    <End Type="Model1.Cliente" Role="Cliente" Multiplicity="1" />
+    <End Type="Model1.Venda" Role="Venda" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="idCliente" />
+      </Principal>
+      <Dependent Role="Venda">
+        <PropertyRef Name="Cliente_idCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="VendaCasaVendavel">
+    <End Type="Model1.Venda" Role="Venda" Multiplicity="0..1" />
+    <End Type="Model1.CasaVendavel" Role="CasaVendavel" Multiplicity="1" />
+  </Association>
 </Schema>

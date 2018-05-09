@@ -69,11 +69,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arrendamento.cs">
+      <DependentUpon>GCC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Casa.cs">
+      <DependentUpon>GCC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CasaArrendavel.cs">
+      <DependentUpon>GCC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CasaVendavel.cs">
+      <DependentUpon>GCC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.cs">
+      <DependentUpon>GCC.tt</DependentUpon>
+    </Compile>
     <Compile Include="FormArrendamentos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormArrendamentos.Designer.cs">
       <DependentUpon>FormArrendamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GCC.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GCC.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GCC.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GCC.tt</DependentUpon>
     </Compile>
     <Compile Include="GCC.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -87,7 +112,7 @@
       <DependentUpon>Gerir_Casas.cs</DependentUpon>
     </Compile>
     <Compile Include="Limpeza.cs">
-      <SubType>Form</SubType>
+      <DependentUpon>GCC.tt</DependentUpon>
     </Compile>
     <Compile Include="Limpeza.Designer.cs">
       <DependentUpon>Limpeza.cs</DependentUpon>
@@ -126,11 +151,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Servico.cs">
+      <DependentUpon>GCC.tt</DependentUpon>
+    </Compile>
     <Compile Include="Venda de Casa.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Venda de Casa.Designer.cs">
       <DependentUpon>Venda de Casa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Venda.cs">
+      <DependentUpon>GCC.tt</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FormArrendamentos.resx">
       <DependentUpon>FormArrendamentos.cs</DependentUpon>
@@ -197,12 +228,23 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ImoDA.mdf">
+    <Content Include="GCC.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GCC.Context.cs</LastGenOutput>
+      <DependentUpon>GCC.edmx</DependentUpon>
+    </Content>
+    <Content Include="GCC.edmx.sql" />
+    <Content Include="GCC.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="ImoDA_log.ldf">
+    <Content Include="GCC.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GCC.cs</LastGenOutput>
+      <DependentUpon>GCC.edmx</DependentUpon>
+    </Content>
+    <Content Include="GCC_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>ImoDA.mdf</DependentUpon>
+      <DependentUpon>GCC.mdf</DependentUpon>
     </Content>
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
