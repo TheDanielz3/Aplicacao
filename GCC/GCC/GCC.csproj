@@ -69,11 +69,41 @@
     <Compile Include="Cliente.cs">
       <DependentUpon>GCCDM.tt</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="DadosVenda.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="DadosVenda.Designer.cs">
+      <DependentUpon>DadosVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerirArrendamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerirArrendamentos.Designer.cs">
+      <DependentUpon>GerirArrendamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerirCasas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerirCasas.Designer.cs">
+      <DependentUpon>GerirCasas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerirClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerirClientes.Designer.cs">
+      <DependentUpon>GerirClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerirLimpezas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerirLimpezas.Designer.cs">
+      <DependentUpon>GerirLimpezas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="GCCDM.Context.cs">
       <AutoGen>True</AutoGen>
@@ -101,6 +131,21 @@
     <Compile Include="Venda.cs">
       <DependentUpon>GCCDM.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GerirCasas.resx">
+      <DependentUpon>GerirCasas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GerirClientes.resx">
+      <DependentUpon>GerirClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GerirLimpezas.pt-PT.resx">
+      <DependentUpon>GerirLimpezas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GerirLimpezas.resx">
+      <DependentUpon>GerirLimpezas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -118,6 +163,14 @@
       <DependentUpon>GCCDM.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Arrendamento.datasource" />
+    <None Include="Properties\DataSources\Casa.datasource" />
+    <None Include="Properties\DataSources\CasaArrendavel.datasource" />
+    <None Include="Properties\DataSources\CasaVendavel.datasource" />
+    <None Include="Properties\DataSources\Cliente.datasource" />
+    <None Include="Properties\DataSources\Limpeza.datasource" />
+    <None Include="Properties\DataSources\Servico.datasource" />
+    <None Include="Properties\DataSources\Venda.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

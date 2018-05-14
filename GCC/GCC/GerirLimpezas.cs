@@ -16,5 +16,45 @@ namespace GCC
         {
             InitializeComponent();
         }
+
+        private void idClienteTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GerirLimpezas_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void moradaTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void moradaLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void contactoLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nomeLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void contactoTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nIFTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

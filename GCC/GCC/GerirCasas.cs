@@ -16,5 +16,20 @@ namespace GCC
         {
             InitializeComponent();
         }
+
+        private void numeroLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numeroTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void valorComissaoTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

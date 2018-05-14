@@ -12,3 +12,9 @@ C:\Users\Diogo\Desktop\GCC\GCC\obj\Debug\GCC.csproj.CoreCompileInputs.cache
 C:\Users\Diogo\Desktop\GCC\GCC\obj\Debug\GCC.csproj.CopyComplete
 C:\Users\Diogo\Desktop\GCC\GCC\obj\Debug\GCC.exe
 C:\Users\Diogo\Desktop\GCC\GCC\obj\Debug\GCC.pdb
+C:\Users\Diogo\Desktop\GCC\GCC\bin\Debug\pt-PT\GCC.resources.dll
+C:\Users\Diogo\Desktop\GCC\GCC\obj\Debug\GCC.GerirClientes.resources
+C:\Users\Diogo\Desktop\GCC\GCC\obj\Debug\GCC.GerirLimpezas.resources
+C:\Users\Diogo\Desktop\GCC\GCC\obj\Debug\GCC.Menu.resources
+C:\Users\Diogo\Desktop\GCC\GCC\obj\Debug\GCC.GerirLimpezas.pt-PT.resources
+C:\Users\Diogo\Desktop\GCC\GCC\obj\Debug\pt-PT\GCC.resources.dll
