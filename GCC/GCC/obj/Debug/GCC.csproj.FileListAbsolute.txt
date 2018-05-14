@@ -1,0 +1,14 @@
+C:\Users\Diogo\Desktop\GCC\GCC\bin\Debug\GCC.exe.config
+C:\Users\Diogo\Desktop\GCC\GCC\bin\Debug\GCC.exe
+C:\Users\Diogo\Desktop\GCC\GCC\bin\Debug\GCC.pdb
+C:\Users\Diogo\Desktop\GCC\GCC\bin\Debug\EntityFramework.dll
+C:\Users\Diogo\Desktop\GCC\GCC\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Diogo\Desktop\GCC\GCC\bin\Debug\EntityFramework.xml
+C:\Users\Diogo\Desktop\GCC\GCC\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Diogo\Desktop\GCC\GCC\obj\Debug\GCC.csprojAssemblyReference.cache
+C:\Users\Diogo\Desktop\GCC\GCC\obj\Debug\GCC.Properties.Resources.resources
+C:\Users\Diogo\Desktop\GCC\GCC\obj\Debug\GCC.csproj.GenerateResource.cache
+C:\Users\Diogo\Desktop\GCC\GCC\obj\Debug\GCC.csproj.CoreCompileInputs.cache
+C:\Users\Diogo\Desktop\GCC\GCC\obj\Debug\GCC.csproj.CopyComplete
+C:\Users\Diogo\Desktop\GCC\GCC\obj\Debug\GCC.exe
+C:\Users\Diogo\Desktop\GCC\GCC\obj\Debug\GCC.pdb
