@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a45d01f8d9d94548a42c64859049e47b" Name="Diagram1" ZoomLevel="65" >
+        <EntityTypeShape EntityType="GCCDM.Cliente" Width="1.5" PointX="1.375" PointY="3.5" />
+        <EntityTypeShape EntityType="GCCDM.Arrendamento" Width="1.5" PointX="5.75" PointY="1.125" />
+        <EntityTypeShape EntityType="GCCDM.Servico" Width="1.5" PointX="5" PointY="4.75" />
+        <EntityTypeShape EntityType="GCCDM.Limpeza" Width="1.5" PointX="8" PointY="5.25" />
+        <EntityTypeShape EntityType="GCCDM.Casa" Width="1.5" PointX="11.375" PointY="3.875" />
+        <EntityTypeShape EntityType="GCCDM.Venda" Width="1.5" PointX="6.875" PointY="8" />
+        <EntityTypeShape EntityType="GCCDM.CasaArrendavel" Width="1.5" PointX="11.125" PointY="1" />
+        <EntityTypeShape EntityType="GCCDM.CasaVendavel" Width="1.5" PointX="11.25" PointY="9.125" />
+        <AssociationConnector Association="GCCDM.ClienteArrendamento" />
+        <AssociationConnector Association="GCCDM.ClienteCasa" />
+        <AssociationConnector Association="GCCDM.ServicoLimpeza" />
+        <AssociationConnector Association="GCCDM.ClienteVenda" />
+        <AssociationConnector Association="GCCDM.LimpezaCasa" />
+        <AssociationConnector Association="GCCDM.VendaCasaVendavel" />
+        <AssociationConnector Association="GCCDM.CasaArrendavelArrendamento" />
+        <InheritanceConnector EntityType="GCCDM.CasaArrendavel" />
+        <InheritanceConnector EntityType="GCCDM.CasaVendavel" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
