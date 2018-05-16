@@ -16,5 +16,15 @@ namespace GCC
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void renovavelLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

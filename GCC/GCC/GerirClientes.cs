@@ -16,5 +16,10 @@ namespace GCC
         {
             InitializeComponent();
         }
+
+        private void GerirClientes_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

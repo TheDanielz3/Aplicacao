@@ -2,13 +2,13 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 05/14/2018 13:55:10
--- Generated from EDMX file: C:\Users\Diogo\Desktop\GCC\GCC\GCCDM.edmx
+-- Date Created: 05/16/2018 16:05:51
+-- Generated from EDMX file: C:\Users\danie\Desktop\GCC\GCC\GCCDM.edmx
 -- --------------------------------------------------
 
 SET QUOTED_IDENTIFIER OFF;
 GO
-USE [GCCDataBase];
+USE [GCCDM];
 GO
 IF SCHEMA_ID(N'dbo') IS NULL EXECUTE(N'CREATE SCHEMA [dbo]');
 GO
@@ -17,11 +17,62 @@ GO
 -- Dropping existing FOREIGN KEY constraints
 -- --------------------------------------------------
 
+IF OBJECT_ID(N'[dbo].[FK_ClienteArrendamento]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[ArrendamentoSet] DROP CONSTRAINT [FK_ClienteArrendamento];
+GO
+IF OBJECT_ID(N'[dbo].[FK_ClienteCasa]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[CasaSet] DROP CONSTRAINT [FK_ClienteCasa];
+GO
+IF OBJECT_ID(N'[dbo].[FK_ServicoLimpeza]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[ServicoSet] DROP CONSTRAINT [FK_ServicoLimpeza];
+GO
+IF OBJECT_ID(N'[dbo].[FK_ClienteVenda]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[VendaSet] DROP CONSTRAINT [FK_ClienteVenda];
+GO
+IF OBJECT_ID(N'[dbo].[FK_LimpezaCasa]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[LimpezaSet] DROP CONSTRAINT [FK_LimpezaCasa];
+GO
+IF OBJECT_ID(N'[dbo].[FK_VendaCasaVendavel]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[VendaSet] DROP CONSTRAINT [FK_VendaCasaVendavel];
+GO
+IF OBJECT_ID(N'[dbo].[FK_CasaArrendavelArrendamento]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[ArrendamentoSet] DROP CONSTRAINT [FK_CasaArrendavelArrendamento];
+GO
+IF OBJECT_ID(N'[dbo].[FK_CasaVendavel_inherits_Casa]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[CasaSet_CasaVendavel] DROP CONSTRAINT [FK_CasaVendavel_inherits_Casa];
+GO
+IF OBJECT_ID(N'[dbo].[FK_CasaArrendavel_inherits_Casa]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[CasaSet_CasaArrendavel] DROP CONSTRAINT [FK_CasaArrendavel_inherits_Casa];
+GO
 
 -- --------------------------------------------------
 -- Dropping existing tables
 -- --------------------------------------------------
 
+IF OBJECT_ID(N'[dbo].[ClienteSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[ClienteSet];
+GO
+IF OBJECT_ID(N'[dbo].[ArrendamentoSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[ArrendamentoSet];
+GO
+IF OBJECT_ID(N'[dbo].[ServicoSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[ServicoSet];
+GO
+IF OBJECT_ID(N'[dbo].[LimpezaSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[LimpezaSet];
+GO
+IF OBJECT_ID(N'[dbo].[CasaSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[CasaSet];
+GO
+IF OBJECT_ID(N'[dbo].[VendaSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[VendaSet];
+GO
+IF OBJECT_ID(N'[dbo].[CasaSet_CasaVendavel]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[CasaSet_CasaVendavel];
+GO
+IF OBJECT_ID(N'[dbo].[CasaSet_CasaArrendavel]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[CasaSet_CasaArrendavel];
+GO
 
 -- --------------------------------------------------
 -- Creating all tables
