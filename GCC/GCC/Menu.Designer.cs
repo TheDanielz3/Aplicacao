@@ -42,6 +42,7 @@
             this.buttonGerirClientes.Text = "Gerir Clientes";
             this.buttonGerirClientes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonGerirClientes.UseVisualStyleBackColor = true;
+            this.buttonGerirClientes.Click += new System.EventHandler(this.buttonGerirClientes_Click);
             // 
             // buttonGerirCasas
             // 
@@ -52,6 +53,7 @@
             this.buttonGerirCasas.Text = "Gerir Casas";
             this.buttonGerirCasas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonGerirCasas.UseVisualStyleBackColor = true;
+            this.buttonGerirCasas.Click += new System.EventHandler(this.buttonGerirCasas_Click);
             // 
             // labelGCC
             // 
