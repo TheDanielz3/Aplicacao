@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F92AEAFB-032B-4774-93F0-312ADFA0EA7A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GCC</RootNamespace>
+    <AssemblyName>GCC</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arrendamento.cs">
+      <DependentUpon>GCCDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Casa.cs">
+      <DependentUpon>GCCDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CasaArrendavel.cs">
+      <DependentUpon>GCCDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CasaVendavel.cs">
+      <DependentUpon>GCCDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.cs">
+      <DependentUpon>GCCDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DadosVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DadosVenda.Designer.cs">
+      <DependentUpon>DadosVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerirArrendamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerirArrendamentos.Designer.cs">
+      <DependentUpon>GerirArrendamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerirCasas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerirCasas.Designer.cs">
+      <DependentUpon>GerirCasas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerirClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerirClientes.Designer.cs">
+      <DependentUpon>GerirClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerirLimpezas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerirLimpezas.Designer.cs">
+      <DependentUpon>GerirLimpezas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GCCDM.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GCCDM.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GCCDM.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GCCDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GCCDM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GCCDM.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Limpeza.cs">
+      <DependentUpon>GCCDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Servico.cs">
+      <DependentUpon>GCCDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Venda.cs">
+      <DependentUpon>GCCDM.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GerirArrendamentos.resx">
+      <DependentUpon>GerirArrendamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GerirCasas.resx">
+      <DependentUpon>GerirCasas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GerirClientes.resx">
+      <DependentUpon>GerirClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GerirLimpezas.pt-PT.resx">
+      <DependentUpon>GerirLimpezas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GerirLimpezas.resx">
+      <DependentUpon>GerirLimpezas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EntityDeploy Include="GCCDM.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>GCCDM.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="GCCDM.edmx.diagram">
+      <DependentUpon>GCCDM.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Arrendamento.datasource" />
+    <None Include="Properties\DataSources\Casa.datasource" />
+    <None Include="Properties\DataSources\CasaArrendavel.datasource" />
+    <None Include="Properties\DataSources\CasaVendavel.datasource" />
+    <None Include="Properties\DataSources\Cliente.datasource" />
+    <None Include="Properties\DataSources\Limpeza.datasource" />
+    <None Include="Properties\DataSources\Servico.datasource" />
+    <None Include="Properties\DataSources\Venda.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GCCDM.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GCCDM.Context.cs</LastGenOutput>
+      <DependentUpon>GCCDM.edmx</DependentUpon>
+    </Content>
+    <Content Include="GCCDM.edmx.sql" />
+    <Content Include="GCCDM.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GCCDM.cs</LastGenOutput>
+      <DependentUpon>GCCDM.edmx</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
