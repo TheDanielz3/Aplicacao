@@ -16,5 +16,19 @@ namespace GCC
         {
             InitializeComponent();
         }
+        
+        private void buttonGerirClientes_Click(object sender, EventArgs e)
+        {
+            GerirClientes gerirClientes = new GerirClientes();
+
+            gerirClientes.Show();
+        }
+
+        private void buttonGerirCasas_Click(object sender, EventArgs e)
+        {
+            GerirCasas gerirCasas = new GerirCasas();
+
+            gerirCasas.Show();
+        }
     }
 }
