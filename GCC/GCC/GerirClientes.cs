@@ -22,8 +22,12 @@ namespace GCC
             comboBoxCliente.Items.Add("Nome");
             comboBoxCliente.Items.Add("NIF");
             comboBoxCliente.Items.Add("Contacto");
-        }
 
+            context = new GCCDMContainer();
+
+            clienteDataGridView.DataSource = context.ClienteSet.ToList();
+        }
+        
         private void GerirClientes_Load(object sender, EventArgs e)
         {
 
@@ -40,7 +44,6 @@ namespace GCC
             {
                 if(textBoxFilterCliente.Text.Length > 0)
                 {
-                    context = new GCCDMContainer();
                     context.Dispose();
 
                     if(comboBoxCliente.Text == "Nome")
@@ -75,6 +78,54 @@ namespace GCC
             {
                 MessageBox.Show("Erro", "Erro", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
             }
+        }
+
+        //Botão Guardar Cliente (inserir na datagridview)
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Cliente tempCliente = new Cliente();
+
+            tempCliente.Nome = nomeTextBox.Text;
+            tempCliente.NIF = nIFTextBox.Text;
+            tempCliente.Morada = moradaTextBox.Text;
+            tempCliente.Contacto = contactoTextBox.Text;
+
+            context.ClienteSet.Add(tempCliente);
+
+            context.SaveChanges();
+
+            clienteDataGridView.DataSource = context.ClienteSet.ToList();
+        }
+
+        //Botão Novo (elimina os valores das textboxes para inserir novo cliente)
+        private void button2_Click(object sender, EventArgs e)
+        {
+            idClienteTextBox.Text = String.Empty;
+            nomeTextBox.Text = String.Empty;
+            nIFTextBox.Text = String.Empty;
+            contactoTextBox.Text = String.Empty;
+            moradaTextBox.Text = String.Empty;
+        }
+
+        private void buttonApagar_Click(object sender, EventArgs e)
+        {
+            Cliente clienteSelecionado = (Cliente) clienteDataGridView.SelectedRows[0].DataBoundItem;
+
+
+            //Remover
+            context.ClienteSet.Remove(clienteSelecionado);
+           
+            //salvar
+            context.SaveChanges();
+
+            //atualizar
+            clienteDataGridView.DataSource = context.ClienteSet.ToList();
+
+        }
+
+        private void clienteDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
