@@ -29,9 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+<<<<<<< HEAD
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GerirCasas));
             System.Windows.Forms.Label areaLabel;
             System.Windows.Forms.Label idCasaLabel;
+=======
+            System.Windows.Forms.Label areaLabel;
+>>>>>>> V.Daniel
             System.Windows.Forms.Label localidadeLabel;
             System.Windows.Forms.Label numeroLabel;
             System.Windows.Forms.Label numeroAssoalhadasLabel;
@@ -44,19 +48,34 @@
             System.Windows.Forms.Label valorBaseMesLabel;
             System.Windows.Forms.Label valorBaseVendaLabel;
             System.Windows.Forms.Label valorComissaoLabel;
+<<<<<<< HEAD
             this.casaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.casaBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+=======
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GerirCasas));
+            this.casaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.casaBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+>>>>>>> V.Daniel
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+<<<<<<< HEAD
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+=======
+>>>>>>> V.Daniel
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+<<<<<<< HEAD
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+=======
+>>>>>>> V.Daniel
             this.casaBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.casaDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -71,8 +90,32 @@
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBoxDetalhesCasas = new System.Windows.Forms.GroupBox();
+<<<<<<< HEAD
             this.areaDomainUpDown = new System.Windows.Forms.DomainUpDown();
             this.idCasaTextBox = new System.Windows.Forms.TextBox();
+=======
+            this.buttonNovaCasa = new System.Windows.Forms.Button();
+            this.buttonGuardarCasa = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.groupBoxDadosVenda = new System.Windows.Forms.GroupBox();
+            this.buttonVerVenda = new System.Windows.Forms.Button();
+            this.labelEuro4 = new System.Windows.Forms.Label();
+            this.labelEuro3 = new System.Windows.Forms.Label();
+            this.valorComissaoTextBox = new System.Windows.Forms.TextBox();
+            this.casaVendavelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.valorBaseVendaTextBox = new System.Windows.Forms.TextBox();
+            this.groupBoxDadosArrendamento = new System.Windows.Forms.GroupBox();
+            this.buttonVerCriarArrendamento = new System.Windows.Forms.Button();
+            this.labelEuro2 = new System.Windows.Forms.Label();
+            this.labelEuro1 = new System.Windows.Forms.Label();
+            this.valorBaseMesTextBox = new System.Windows.Forms.TextBox();
+            this.casaArrendavelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.comissaoTextBox = new System.Windows.Forms.TextBox();
+            this.checkBoxVendavel = new System.Windows.Forms.CheckBox();
+            this.checkBoxArrendavel = new System.Windows.Forms.CheckBox();
+            this.proprietarioComboBox = new System.Windows.Forms.ComboBox();
+            this.areaDomainUpDown = new System.Windows.Forms.DomainUpDown();
+>>>>>>> V.Daniel
             this.localidadeTextBox = new System.Windows.Forms.TextBox();
             this.numeroTextBox = new System.Windows.Forms.TextBox();
             this.numeroAssoalhadasNumericUpDown = new System.Windows.Forms.NumericUpDown();
@@ -80,6 +123,7 @@
             this.numeroWCNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.ruaTextBox = new System.Windows.Forms.TextBox();
             this.tipoComboBox = new System.Windows.Forms.ComboBox();
+<<<<<<< HEAD
             this.proprietarioComboBox = new System.Windows.Forms.ComboBox();
             this.checkBoxArrendavel = new System.Windows.Forms.CheckBox();
             this.checkBoxVendavel = new System.Windows.Forms.CheckBox();
@@ -103,6 +147,10 @@
             this.buttonApagarCasa = new System.Windows.Forms.Button();
             areaLabel = new System.Windows.Forms.Label();
             idCasaLabel = new System.Windows.Forms.Label();
+=======
+            this.buttonApagarCasa = new System.Windows.Forms.Button();
+            areaLabel = new System.Windows.Forms.Label();
+>>>>>>> V.Daniel
             localidadeLabel = new System.Windows.Forms.Label();
             numeroLabel = new System.Windows.Forms.Label();
             numeroAssoalhadasLabel = new System.Windows.Forms.Label();
@@ -120,6 +168,7 @@
             this.casaBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.casaDataGridView)).BeginInit();
             this.groupBoxDetalhesCasas.SuspendLayout();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.numeroAssoalhadasNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeroPisosNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeroWCNumericUpDown)).BeginInit();
@@ -129,6 +178,135 @@
             ((System.ComponentModel.ISupportInitialize)(this.casaVendavelBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
+=======
+            this.groupBoxDadosVenda.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.casaVendavelBindingSource)).BeginInit();
+            this.groupBoxDadosArrendamento.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.casaArrendavelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeroAssoalhadasNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeroPisosNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeroWCNumericUpDown)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // areaLabel
+            // 
+            areaLabel.AutoSize = true;
+            areaLabel.Location = new System.Drawing.Point(72, 114);
+            areaLabel.Name = "areaLabel";
+            areaLabel.Size = new System.Drawing.Size(32, 13);
+            areaLabel.TabIndex = 0;
+            areaLabel.Text = "Area:";
+            // 
+            // localidadeLabel
+            // 
+            localidadeLabel.AutoSize = true;
+            localidadeLabel.Location = new System.Drawing.Point(72, 37);
+            localidadeLabel.Name = "localidadeLabel";
+            localidadeLabel.Size = new System.Drawing.Size(62, 13);
+            localidadeLabel.TabIndex = 4;
+            localidadeLabel.Text = "Localidade:";
+            // 
+            // numeroLabel
+            // 
+            numeroLabel.AutoSize = true;
+            numeroLabel.Location = new System.Drawing.Point(72, 89);
+            numeroLabel.Name = "numeroLabel";
+            numeroLabel.Size = new System.Drawing.Size(47, 13);
+            numeroLabel.TabIndex = 6;
+            numeroLabel.Text = "Numero:";
+            numeroLabel.Click += new System.EventHandler(this.numeroLabel_Click);
+            // 
+            // numeroAssoalhadasLabel
+            // 
+            numeroAssoalhadasLabel.AutoSize = true;
+            numeroAssoalhadasLabel.Location = new System.Drawing.Point(72, 140);
+            numeroAssoalhadasLabel.Name = "numeroAssoalhadasLabel";
+            numeroAssoalhadasLabel.Size = new System.Drawing.Size(110, 13);
+            numeroAssoalhadasLabel.TabIndex = 8;
+            numeroAssoalhadasLabel.Text = "Numero Assoalhadas:";
+            // 
+            // numeroPisosLabel
+            // 
+            numeroPisosLabel.AutoSize = true;
+            numeroPisosLabel.Location = new System.Drawing.Point(72, 200);
+            numeroPisosLabel.Name = "numeroPisosLabel";
+            numeroPisosLabel.Size = new System.Drawing.Size(75, 13);
+            numeroPisosLabel.TabIndex = 10;
+            numeroPisosLabel.Text = "Numero Pisos:";
+            // 
+            // numeroWCLabel
+            // 
+            numeroWCLabel.AutoSize = true;
+            numeroWCLabel.Location = new System.Drawing.Point(72, 169);
+            numeroWCLabel.Name = "numeroWCLabel";
+            numeroWCLabel.Size = new System.Drawing.Size(68, 13);
+            numeroWCLabel.TabIndex = 12;
+            numeroWCLabel.Text = "Numero WC:";
+            // 
+            // ruaLabel
+            // 
+            ruaLabel.AutoSize = true;
+            ruaLabel.Location = new System.Drawing.Point(72, 63);
+            ruaLabel.Name = "ruaLabel";
+            ruaLabel.Size = new System.Drawing.Size(30, 13);
+            ruaLabel.TabIndex = 14;
+            ruaLabel.Text = "Rua:";
+            // 
+            // tipoLabel
+            // 
+            tipoLabel.AutoSize = true;
+            tipoLabel.Location = new System.Drawing.Point(72, 227);
+            tipoLabel.Name = "tipoLabel";
+            tipoLabel.Size = new System.Drawing.Size(31, 13);
+            tipoLabel.TabIndex = 16;
+            tipoLabel.Text = "Tipo:";
+            // 
+            // proprietarioLabel
+            // 
+            proprietarioLabel.AutoSize = true;
+            proprietarioLabel.Location = new System.Drawing.Point(72, 251);
+            proprietarioLabel.Name = "proprietarioLabel";
+            proprietarioLabel.Size = new System.Drawing.Size(63, 13);
+            proprietarioLabel.TabIndex = 18;
+            proprietarioLabel.Text = "Proprietario:";
+            // 
+            // comissaoLabel
+            // 
+            comissaoLabel.AutoSize = true;
+            comissaoLabel.Location = new System.Drawing.Point(9, 97);
+            comissaoLabel.Name = "comissaoLabel";
+            comissaoLabel.Size = new System.Drawing.Size(55, 13);
+            comissaoLabel.TabIndex = 0;
+            comissaoLabel.Text = "Comissao:";
+            // 
+            // valorBaseMesLabel
+            // 
+            valorBaseMesLabel.AutoSize = true;
+            valorBaseMesLabel.Location = new System.Drawing.Point(13, 49);
+            valorBaseMesLabel.Name = "valorBaseMesLabel";
+            valorBaseMesLabel.Size = new System.Drawing.Size(84, 13);
+            valorBaseMesLabel.TabIndex = 2;
+            valorBaseMesLabel.Text = "Valor Base Mes:";
+            // 
+            // valorBaseVendaLabel
+            // 
+            valorBaseVendaLabel.AutoSize = true;
+            valorBaseVendaLabel.Location = new System.Drawing.Point(15, 49);
+            valorBaseVendaLabel.Name = "valorBaseVendaLabel";
+            valorBaseVendaLabel.Size = new System.Drawing.Size(106, 13);
+            valorBaseVendaLabel.TabIndex = 0;
+            valorBaseVendaLabel.Text = "Valor Base Negocial:";
+            // 
+            // valorComissaoLabel
+            // 
+            valorComissaoLabel.AutoSize = true;
+            valorComissaoLabel.Location = new System.Drawing.Point(15, 97);
+            valorComissaoLabel.Name = "valorComissaoLabel";
+            valorComissaoLabel.Size = new System.Drawing.Size(82, 13);
+            valorComissaoLabel.TabIndex = 2;
+            valorComissaoLabel.Text = "Comissao Base:";
+            // 
+>>>>>>> V.Daniel
             // casaBindingSource
             // 
             this.casaBindingSource.DataSource = typeof(GCC.Casa);
@@ -163,6 +341,34 @@
             this.casaBindingNavigator.TabIndex = 0;
             this.casaBindingNavigator.Text = "bindingNavigator1";
             // 
+<<<<<<< HEAD
+=======
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
+>>>>>>> V.Daniel
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -195,6 +401,7 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
+<<<<<<< HEAD
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
@@ -205,6 +412,11 @@
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+=======
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+>>>>>>> V.Daniel
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -227,6 +439,7 @@
             // 
             // bindingNavigatorSeparator2
             // 
+<<<<<<< HEAD
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
@@ -248,6 +461,11 @@
             this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
+=======
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+>>>>>>> V.Daniel
             // casaBindingNavigatorSaveItem
             // 
             this.casaBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -358,8 +576,11 @@
             this.groupBoxDetalhesCasas.Controls.Add(this.proprietarioComboBox);
             this.groupBoxDetalhesCasas.Controls.Add(areaLabel);
             this.groupBoxDetalhesCasas.Controls.Add(this.areaDomainUpDown);
+<<<<<<< HEAD
             this.groupBoxDetalhesCasas.Controls.Add(idCasaLabel);
             this.groupBoxDetalhesCasas.Controls.Add(this.idCasaTextBox);
+=======
+>>>>>>> V.Daniel
             this.groupBoxDetalhesCasas.Controls.Add(localidadeLabel);
             this.groupBoxDetalhesCasas.Controls.Add(this.localidadeTextBox);
             this.groupBoxDetalhesCasas.Controls.Add(numeroLabel);
@@ -381,6 +602,7 @@
             this.groupBoxDetalhesCasas.TabStop = false;
             this.groupBoxDetalhesCasas.Text = "Detalhes";
             // 
+<<<<<<< HEAD
             // areaLabel
             // 
             areaLabel.AutoSize = true;
@@ -575,6 +797,98 @@
             this.checkBoxVendavel.TabIndex = 24;
             this.checkBoxVendavel.Text = "Vendavel";
             this.checkBoxVendavel.UseVisualStyleBackColor = true;
+=======
+            // buttonNovaCasa
+            // 
+            this.buttonNovaCasa.Location = new System.Drawing.Point(372, 531);
+            this.buttonNovaCasa.Name = "buttonNovaCasa";
+            this.buttonNovaCasa.Size = new System.Drawing.Size(75, 23);
+            this.buttonNovaCasa.TabIndex = 29;
+            this.buttonNovaCasa.Text = "Nova";
+            this.buttonNovaCasa.UseVisualStyleBackColor = true;
+            // 
+            // buttonGuardarCasa
+            // 
+            this.buttonGuardarCasa.Location = new System.Drawing.Point(22, 531);
+            this.buttonGuardarCasa.Name = "buttonGuardarCasa";
+            this.buttonGuardarCasa.Size = new System.Drawing.Size(75, 23);
+            this.buttonGuardarCasa.TabIndex = 28;
+            this.buttonGuardarCasa.Text = "Guardar";
+            this.buttonGuardarCasa.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(22, 498);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(425, 23);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "Gerir Limpezas (Total: 0)";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxDadosVenda
+            // 
+            this.groupBoxDadosVenda.Controls.Add(this.buttonVerVenda);
+            this.groupBoxDadosVenda.Controls.Add(this.labelEuro4);
+            this.groupBoxDadosVenda.Controls.Add(this.labelEuro3);
+            this.groupBoxDadosVenda.Controls.Add(valorComissaoLabel);
+            this.groupBoxDadosVenda.Controls.Add(this.valorComissaoTextBox);
+            this.groupBoxDadosVenda.Controls.Add(valorBaseVendaLabel);
+            this.groupBoxDadosVenda.Controls.Add(this.valorBaseVendaTextBox);
+            this.groupBoxDadosVenda.Location = new System.Drawing.Point(260, 307);
+            this.groupBoxDadosVenda.Name = "groupBoxDadosVenda";
+            this.groupBoxDadosVenda.Size = new System.Drawing.Size(187, 185);
+            this.groupBoxDadosVenda.TabIndex = 26;
+            this.groupBoxDadosVenda.TabStop = false;
+            this.groupBoxDadosVenda.Text = "Dados de Venda";
+            // 
+            // buttonVerVenda
+            // 
+            this.buttonVerVenda.Location = new System.Drawing.Point(18, 148);
+            this.buttonVerVenda.Name = "buttonVerVenda";
+            this.buttonVerVenda.Size = new System.Drawing.Size(100, 23);
+            this.buttonVerVenda.TabIndex = 8;
+            this.buttonVerVenda.Text = "Ver";
+            this.buttonVerVenda.UseVisualStyleBackColor = true;
+            // 
+            // labelEuro4
+            // 
+            this.labelEuro4.AutoSize = true;
+            this.labelEuro4.Location = new System.Drawing.Point(124, 116);
+            this.labelEuro4.Name = "labelEuro4";
+            this.labelEuro4.Size = new System.Drawing.Size(13, 13);
+            this.labelEuro4.TabIndex = 7;
+            this.labelEuro4.Text = "€";
+            // 
+            // labelEuro3
+            // 
+            this.labelEuro3.AutoSize = true;
+            this.labelEuro3.Location = new System.Drawing.Point(124, 68);
+            this.labelEuro3.Name = "labelEuro3";
+            this.labelEuro3.Size = new System.Drawing.Size(13, 13);
+            this.labelEuro3.TabIndex = 6;
+            this.labelEuro3.Text = "€";
+            // 
+            // valorComissaoTextBox
+            // 
+            this.valorComissaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.casaVendavelBindingSource, "ValorComissao", true));
+            this.valorComissaoTextBox.Location = new System.Drawing.Point(18, 113);
+            this.valorComissaoTextBox.Name = "valorComissaoTextBox";
+            this.valorComissaoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.valorComissaoTextBox.TabIndex = 3;
+            this.valorComissaoTextBox.TextChanged += new System.EventHandler(this.valorComissaoTextBox_TextChanged);
+            // 
+            // casaVendavelBindingSource
+            // 
+            this.casaVendavelBindingSource.DataSource = typeof(GCC.CasaVendavel);
+            // 
+            // valorBaseVendaTextBox
+            // 
+            this.valorBaseVendaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.casaVendavelBindingSource, "ValorBaseVenda", true));
+            this.valorBaseVendaTextBox.Location = new System.Drawing.Point(18, 65);
+            this.valorBaseVendaTextBox.Name = "valorBaseVendaTextBox";
+            this.valorBaseVendaTextBox.Size = new System.Drawing.Size(100, 20);
+            this.valorBaseVendaTextBox.TabIndex = 1;
+>>>>>>> V.Daniel
             // 
             // groupBoxDadosArrendamento
             // 
@@ -592,6 +906,7 @@
             this.groupBoxDadosArrendamento.TabStop = false;
             this.groupBoxDadosArrendamento.Text = "Dados de Arrendamento";
             // 
+<<<<<<< HEAD
             // groupBoxDadosVenda
             // 
             this.groupBoxDadosVenda.Controls.Add(this.buttonVerVenda);
@@ -637,6 +952,34 @@
             valorBaseMesLabel.Size = new System.Drawing.Size(84, 13);
             valorBaseMesLabel.TabIndex = 2;
             valorBaseMesLabel.Text = "Valor Base Mes:";
+=======
+            // buttonVerCriarArrendamento
+            // 
+            this.buttonVerCriarArrendamento.Location = new System.Drawing.Point(12, 148);
+            this.buttonVerCriarArrendamento.Name = "buttonVerCriarArrendamento";
+            this.buttonVerCriarArrendamento.Size = new System.Drawing.Size(148, 23);
+            this.buttonVerCriarArrendamento.TabIndex = 6;
+            this.buttonVerCriarArrendamento.Text = "Ver/Criar";
+            this.buttonVerCriarArrendamento.UseVisualStyleBackColor = true;
+            // 
+            // labelEuro2
+            // 
+            this.labelEuro2.AutoSize = true;
+            this.labelEuro2.Location = new System.Drawing.Point(166, 116);
+            this.labelEuro2.Name = "labelEuro2";
+            this.labelEuro2.Size = new System.Drawing.Size(13, 13);
+            this.labelEuro2.TabIndex = 5;
+            this.labelEuro2.Text = "€";
+            // 
+            // labelEuro1
+            // 
+            this.labelEuro1.AutoSize = true;
+            this.labelEuro1.Location = new System.Drawing.Point(166, 68);
+            this.labelEuro1.Name = "labelEuro1";
+            this.labelEuro1.Size = new System.Drawing.Size(13, 13);
+            this.labelEuro1.TabIndex = 4;
+            this.labelEuro1.Text = "€";
+>>>>>>> V.Daniel
             // 
             // valorBaseMesTextBox
             // 
@@ -646,6 +989,7 @@
             this.valorBaseMesTextBox.Size = new System.Drawing.Size(148, 20);
             this.valorBaseMesTextBox.TabIndex = 3;
             // 
+<<<<<<< HEAD
             // labelEuro1
             // 
             this.labelEuro1.AutoSize = true;
@@ -765,6 +1109,115 @@
             this.buttonNovaCasa.TabIndex = 29;
             this.buttonNovaCasa.Text = "Nova";
             this.buttonNovaCasa.UseVisualStyleBackColor = true;
+=======
+            // casaArrendavelBindingSource
+            // 
+            this.casaArrendavelBindingSource.DataSource = typeof(GCC.CasaArrendavel);
+            // 
+            // comissaoTextBox
+            // 
+            this.comissaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.casaArrendavelBindingSource, "Comissao", true));
+            this.comissaoTextBox.Location = new System.Drawing.Point(12, 113);
+            this.comissaoTextBox.Name = "comissaoTextBox";
+            this.comissaoTextBox.Size = new System.Drawing.Size(148, 20);
+            this.comissaoTextBox.TabIndex = 1;
+            // 
+            // checkBoxVendavel
+            // 
+            this.checkBoxVendavel.AutoSize = true;
+            this.checkBoxVendavel.Location = new System.Drawing.Point(238, 284);
+            this.checkBoxVendavel.Name = "checkBoxVendavel";
+            this.checkBoxVendavel.Size = new System.Drawing.Size(71, 17);
+            this.checkBoxVendavel.TabIndex = 24;
+            this.checkBoxVendavel.Text = "Vendavel";
+            this.checkBoxVendavel.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxArrendavel
+            // 
+            this.checkBoxArrendavel.AutoSize = true;
+            this.checkBoxArrendavel.Location = new System.Drawing.Point(75, 284);
+            this.checkBoxArrendavel.Name = "checkBoxArrendavel";
+            this.checkBoxArrendavel.Size = new System.Drawing.Size(77, 17);
+            this.checkBoxArrendavel.TabIndex = 23;
+            this.checkBoxArrendavel.Text = "Arrendável";
+            this.checkBoxArrendavel.UseVisualStyleBackColor = true;
+            // 
+            // proprietarioComboBox
+            // 
+            this.proprietarioComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.casaBindingSource, "Proprietario", true));
+            this.proprietarioComboBox.FormattingEnabled = true;
+            this.proprietarioComboBox.Location = new System.Drawing.Point(188, 251);
+            this.proprietarioComboBox.Name = "proprietarioComboBox";
+            this.proprietarioComboBox.Size = new System.Drawing.Size(224, 21);
+            this.proprietarioComboBox.TabIndex = 19;
+            // 
+            // areaDomainUpDown
+            // 
+            this.areaDomainUpDown.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.casaBindingSource, "Area", true));
+            this.areaDomainUpDown.Location = new System.Drawing.Point(188, 112);
+            this.areaDomainUpDown.Name = "areaDomainUpDown";
+            this.areaDomainUpDown.Size = new System.Drawing.Size(224, 20);
+            this.areaDomainUpDown.TabIndex = 1;
+            this.areaDomainUpDown.Text = "domainUpDown1";
+            // 
+            // localidadeTextBox
+            // 
+            this.localidadeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.casaBindingSource, "Localidade", true));
+            this.localidadeTextBox.Location = new System.Drawing.Point(188, 34);
+            this.localidadeTextBox.Name = "localidadeTextBox";
+            this.localidadeTextBox.Size = new System.Drawing.Size(224, 20);
+            this.localidadeTextBox.TabIndex = 5;
+            // 
+            // numeroTextBox
+            // 
+            this.numeroTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.casaBindingSource, "Numero", true));
+            this.numeroTextBox.Location = new System.Drawing.Point(188, 86);
+            this.numeroTextBox.Name = "numeroTextBox";
+            this.numeroTextBox.Size = new System.Drawing.Size(224, 20);
+            this.numeroTextBox.TabIndex = 7;
+            this.numeroTextBox.TextChanged += new System.EventHandler(this.numeroTextBox_TextChanged);
+            // 
+            // numeroAssoalhadasNumericUpDown
+            // 
+            this.numeroAssoalhadasNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.casaBindingSource, "NumeroAssoalhadas", true));
+            this.numeroAssoalhadasNumericUpDown.Location = new System.Drawing.Point(188, 138);
+            this.numeroAssoalhadasNumericUpDown.Name = "numeroAssoalhadasNumericUpDown";
+            this.numeroAssoalhadasNumericUpDown.Size = new System.Drawing.Size(224, 20);
+            this.numeroAssoalhadasNumericUpDown.TabIndex = 9;
+            // 
+            // numeroPisosNumericUpDown
+            // 
+            this.numeroPisosNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.casaBindingSource, "NumeroPisos", true));
+            this.numeroPisosNumericUpDown.Location = new System.Drawing.Point(188, 198);
+            this.numeroPisosNumericUpDown.Name = "numeroPisosNumericUpDown";
+            this.numeroPisosNumericUpDown.Size = new System.Drawing.Size(224, 20);
+            this.numeroPisosNumericUpDown.TabIndex = 11;
+            // 
+            // numeroWCNumericUpDown
+            // 
+            this.numeroWCNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.casaBindingSource, "NumeroWC", true));
+            this.numeroWCNumericUpDown.Location = new System.Drawing.Point(188, 167);
+            this.numeroWCNumericUpDown.Name = "numeroWCNumericUpDown";
+            this.numeroWCNumericUpDown.Size = new System.Drawing.Size(224, 20);
+            this.numeroWCNumericUpDown.TabIndex = 13;
+            // 
+            // ruaTextBox
+            // 
+            this.ruaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.casaBindingSource, "Rua", true));
+            this.ruaTextBox.Location = new System.Drawing.Point(188, 60);
+            this.ruaTextBox.Name = "ruaTextBox";
+            this.ruaTextBox.Size = new System.Drawing.Size(224, 20);
+            this.ruaTextBox.TabIndex = 15;
+            // 
+            // tipoComboBox
+            // 
+            this.tipoComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.casaBindingSource, "Tipo", true));
+            this.tipoComboBox.FormattingEnabled = true;
+            this.tipoComboBox.Location = new System.Drawing.Point(188, 224);
+            this.tipoComboBox.Name = "tipoComboBox";
+            this.tipoComboBox.Size = new System.Drawing.Size(224, 21);
+            this.tipoComboBox.TabIndex = 17;
+>>>>>>> V.Daniel
             // 
             // buttonApagarCasa
             // 
@@ -793,6 +1246,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.casaDataGridView)).EndInit();
             this.groupBoxDetalhesCasas.ResumeLayout(false);
             this.groupBoxDetalhesCasas.PerformLayout();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.numeroAssoalhadasNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeroPisosNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeroWCNumericUpDown)).EndInit();
@@ -802,6 +1256,17 @@
             this.groupBoxDadosVenda.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.casaArrendavelBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.casaVendavelBindingSource)).EndInit();
+=======
+            this.groupBoxDadosVenda.ResumeLayout(false);
+            this.groupBoxDadosVenda.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.casaVendavelBindingSource)).EndInit();
+            this.groupBoxDadosArrendamento.ResumeLayout(false);
+            this.groupBoxDadosArrendamento.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.casaArrendavelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeroAssoalhadasNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeroPisosNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeroWCNumericUpDown)).EndInit();
+>>>>>>> V.Daniel
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -837,7 +1302,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.GroupBox groupBoxDetalhesCasas;
         private System.Windows.Forms.DomainUpDown areaDomainUpDown;
+<<<<<<< HEAD
         private System.Windows.Forms.TextBox idCasaTextBox;
+=======
+>>>>>>> V.Daniel
         private System.Windows.Forms.TextBox localidadeTextBox;
         private System.Windows.Forms.TextBox numeroTextBox;
         private System.Windows.Forms.NumericUpDown numeroAssoalhadasNumericUpDown;

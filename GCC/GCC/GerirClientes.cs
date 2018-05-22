@@ -95,16 +95,36 @@ namespace GCC
             context.SaveChanges();
 
             clienteDataGridView.DataSource = context.ClienteSet.ToList();
+<<<<<<< HEAD
+=======
+
+            nomeTextBox.ReadOnly = true;
+            nIFTextBox.ReadOnly = true;
+            moradaTextBox.ReadOnly = true;
+            contactoTextBox.ReadOnly = true;
+>>>>>>> V.Daniel
         }
 
         //Botão Novo (elimina os valores das textboxes para inserir novo cliente)
         private void button2_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             idClienteTextBox.Text = String.Empty;
+=======
+            //idClienteTextBox.Text = String.Empty;
+>>>>>>> V.Daniel
             nomeTextBox.Text = String.Empty;
             nIFTextBox.Text = String.Empty;
             contactoTextBox.Text = String.Empty;
             moradaTextBox.Text = String.Empty;
+<<<<<<< HEAD
+=======
+
+            nomeTextBox.ReadOnly = false;
+            nIFTextBox.ReadOnly = false;
+            moradaTextBox.ReadOnly = false;
+            contactoTextBox.ReadOnly = false;
+>>>>>>> V.Daniel
         }
 
         private void buttonApagar_Click(object sender, EventArgs e)
@@ -120,7 +140,10 @@ namespace GCC
 
             //atualizar
             clienteDataGridView.DataSource = context.ClienteSet.ToList();
+<<<<<<< HEAD
 
+=======
+>>>>>>> V.Daniel
         }
 
         private void clienteDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)

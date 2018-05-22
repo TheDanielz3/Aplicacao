@@ -30,14 +30,20 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label contactoLabel;
+<<<<<<< HEAD
             System.Windows.Forms.Label idClienteLabel;
+=======
+>>>>>>> V.Daniel
             System.Windows.Forms.Label moradaLabel;
             System.Windows.Forms.Label nIFLabel;
             System.Windows.Forms.Label nomeLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GerirClientes));
             this.clienteBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+<<<<<<< HEAD
             this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+=======
+>>>>>>> V.Daniel
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -50,6 +56,7 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.clienteBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.clienteDataGridView = new System.Windows.Forms.DataGridView();
+<<<<<<< HEAD
             this.dataGridViewTextBoxColumnIDCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,6 +67,9 @@
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contactoTextBox = new System.Windows.Forms.TextBox();
             this.idClienteTextBox = new System.Windows.Forms.TextBox();
+=======
+            this.contactoTextBox = new System.Windows.Forms.TextBox();
+>>>>>>> V.Daniel
             this.moradaTextBox = new System.Windows.Forms.TextBox();
             this.nIFTextBox = new System.Windows.Forms.TextBox();
             this.nomeTextBox = new System.Windows.Forms.TextBox();
@@ -76,27 +86,48 @@
             this.textBoxFilterCliente = new System.Windows.Forms.TextBox();
             this.comboBoxCliente = new System.Windows.Forms.ComboBox();
             this.buttonFiltrar = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             contactoLabel = new System.Windows.Forms.Label();
             idClienteLabel = new System.Windows.Forms.Label();
+=======
+            this.dataGridViewTextBoxColumnIDCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            contactoLabel = new System.Windows.Forms.Label();
+>>>>>>> V.Daniel
             moradaLabel = new System.Windows.Forms.Label();
             nIFLabel = new System.Windows.Forms.Label();
             nomeLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingNavigator)).BeginInit();
             this.clienteBindingNavigator.SuspendLayout();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteDataGridView)).BeginInit();
             this.groupBoxDetalhesCliente.SuspendLayout();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.clienteDataGridView)).BeginInit();
+            this.groupBoxDetalhesCliente.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
+>>>>>>> V.Daniel
             this.SuspendLayout();
             // 
             // contactoLabel
             // 
             contactoLabel.AutoSize = true;
+<<<<<<< HEAD
             contactoLabel.Location = new System.Drawing.Point(31, 106);
+=======
+            contactoLabel.Location = new System.Drawing.Point(31, 97);
+>>>>>>> V.Daniel
             contactoLabel.Name = "contactoLabel";
             contactoLabel.Size = new System.Drawing.Size(53, 13);
             contactoLabel.TabIndex = 2;
             contactoLabel.Text = "Contacto:";
             // 
+<<<<<<< HEAD
             // idClienteLabel
             // 
             idClienteLabel.AutoSize = true;
@@ -110,6 +141,12 @@
             // 
             moradaLabel.AutoSize = true;
             moradaLabel.Location = new System.Drawing.Point(31, 132);
+=======
+            // moradaLabel
+            // 
+            moradaLabel.AutoSize = true;
+            moradaLabel.Location = new System.Drawing.Point(31, 123);
+>>>>>>> V.Daniel
             moradaLabel.Name = "moradaLabel";
             moradaLabel.Size = new System.Drawing.Size(46, 13);
             moradaLabel.TabIndex = 6;
@@ -118,7 +155,11 @@
             // nIFLabel
             // 
             nIFLabel.AutoSize = true;
+<<<<<<< HEAD
             nIFLabel.Location = new System.Drawing.Point(31, 80);
+=======
+            nIFLabel.Location = new System.Drawing.Point(31, 71);
+>>>>>>> V.Daniel
             nIFLabel.Name = "nIFLabel";
             nIFLabel.Size = new System.Drawing.Size(27, 13);
             nIFLabel.TabIndex = 8;
@@ -127,7 +168,11 @@
             // nomeLabel
             // 
             nomeLabel.AutoSize = true;
+<<<<<<< HEAD
             nomeLabel.Location = new System.Drawing.Point(31, 56);
+=======
+            nomeLabel.Location = new System.Drawing.Point(31, 45);
+>>>>>>> V.Daniel
             nomeLabel.Name = "nomeLabel";
             nomeLabel.Size = new System.Drawing.Size(38, 13);
             nomeLabel.TabIndex = 10;
@@ -172,10 +217,13 @@
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
+<<<<<<< HEAD
             // clienteBindingSource
             // 
             this.clienteBindingSource.DataSource = typeof(GCC.Cliente);
             // 
+=======
+>>>>>>> V.Daniel
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
@@ -264,11 +312,16 @@
             // clienteDataGridView
             // 
             this.clienteDataGridView.AutoGenerateColumns = false;
+<<<<<<< HEAD
+=======
+            this.clienteDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+>>>>>>> V.Daniel
             this.clienteDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.clienteDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumnIDCliente,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
+<<<<<<< HEAD
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6,
@@ -277,10 +330,20 @@
             this.clienteDataGridView.DataSource = this.clienteBindingSource;
             this.clienteDataGridView.Location = new System.Drawing.Point(0, 121);
             this.clienteDataGridView.Name = "clienteDataGridView";
+=======
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn4});
+            this.clienteDataGridView.DataSource = this.clienteBindingSource;
+            this.clienteDataGridView.Location = new System.Drawing.Point(0, 121);
+            this.clienteDataGridView.Name = "clienteDataGridView";
+            this.clienteDataGridView.ReadOnly = true;
+            this.clienteDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+>>>>>>> V.Daniel
             this.clienteDataGridView.Size = new System.Drawing.Size(542, 501);
             this.clienteDataGridView.TabIndex = 1;
             this.clienteDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.clienteDataGridView_CellContentClick);
             // 
+<<<<<<< HEAD
             // dataGridViewTextBoxColumnIDCliente
             // 
             this.dataGridViewTextBoxColumnIDCliente.DataPropertyName = "IdCliente";
@@ -333,10 +396,17 @@
             // 
             this.contactoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Contacto", true));
             this.contactoTextBox.Location = new System.Drawing.Point(91, 103);
+=======
+            // contactoTextBox
+            // 
+            this.contactoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Contacto", true));
+            this.contactoTextBox.Location = new System.Drawing.Point(91, 94);
+>>>>>>> V.Daniel
             this.contactoTextBox.Name = "contactoTextBox";
             this.contactoTextBox.Size = new System.Drawing.Size(100, 20);
             this.contactoTextBox.TabIndex = 3;
             // 
+<<<<<<< HEAD
             // idClienteTextBox
             // 
             this.idClienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "IdCliente", true));
@@ -349,6 +419,12 @@
             // 
             this.moradaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Morada", true));
             this.moradaTextBox.Location = new System.Drawing.Point(91, 129);
+=======
+            // moradaTextBox
+            // 
+            this.moradaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Morada", true));
+            this.moradaTextBox.Location = new System.Drawing.Point(91, 120);
+>>>>>>> V.Daniel
             this.moradaTextBox.Name = "moradaTextBox";
             this.moradaTextBox.Size = new System.Drawing.Size(100, 20);
             this.moradaTextBox.TabIndex = 7;
@@ -356,7 +432,11 @@
             // nIFTextBox
             // 
             this.nIFTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "NIF", true));
+<<<<<<< HEAD
             this.nIFTextBox.Location = new System.Drawing.Point(91, 77);
+=======
+            this.nIFTextBox.Location = new System.Drawing.Point(91, 68);
+>>>>>>> V.Daniel
             this.nIFTextBox.Name = "nIFTextBox";
             this.nIFTextBox.Size = new System.Drawing.Size(100, 20);
             this.nIFTextBox.TabIndex = 9;
@@ -364,7 +444,11 @@
             // nomeTextBox
             // 
             this.nomeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Nome", true));
+<<<<<<< HEAD
             this.nomeTextBox.Location = new System.Drawing.Point(91, 53);
+=======
+            this.nomeTextBox.Location = new System.Drawing.Point(91, 42);
+>>>>>>> V.Daniel
             this.nomeTextBox.Name = "nomeTextBox";
             this.nomeTextBox.Size = new System.Drawing.Size(100, 20);
             this.nomeTextBox.TabIndex = 11;
@@ -374,9 +458,13 @@
             this.groupBoxDetalhesCliente.Controls.Add(contactoLabel);
             this.groupBoxDetalhesCliente.Controls.Add(this.listBox3);
             this.groupBoxDetalhesCliente.Controls.Add(this.contactoTextBox);
+<<<<<<< HEAD
             this.groupBoxDetalhesCliente.Controls.Add(idClienteLabel);
             this.groupBoxDetalhesCliente.Controls.Add(this.labelAquisicoes);
             this.groupBoxDetalhesCliente.Controls.Add(this.idClienteTextBox);
+=======
+            this.groupBoxDetalhesCliente.Controls.Add(this.labelAquisicoes);
+>>>>>>> V.Daniel
             this.groupBoxDetalhesCliente.Controls.Add(this.listBox2);
             this.groupBoxDetalhesCliente.Controls.Add(moradaLabel);
             this.groupBoxDetalhesCliente.Controls.Add(this.labelArrendamentos);
@@ -503,6 +591,48 @@
             this.buttonFiltrar.UseVisualStyleBackColor = true;
             this.buttonFiltrar.Click += new System.EventHandler(this.buttonFiltrar_Click);
             // 
+<<<<<<< HEAD
+=======
+            // dataGridViewTextBoxColumnIDCliente
+            // 
+            this.dataGridViewTextBoxColumnIDCliente.DataPropertyName = "IdCliente";
+            this.dataGridViewTextBoxColumnIDCliente.HeaderText = "IdCliente";
+            this.dataGridViewTextBoxColumnIDCliente.Name = "dataGridViewTextBoxColumnIDCliente";
+            this.dataGridViewTextBoxColumnIDCliente.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Nome";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nome";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "NIF";
+            this.dataGridViewTextBoxColumn3.HeaderText = "NIF";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Contacto";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Contacto";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Morada";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Morada";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // clienteBindingSource
+            // 
+            this.clienteBindingSource.DataSource = typeof(GCC.Cliente);
+            // 
+>>>>>>> V.Daniel
             // GerirClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -521,10 +651,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingNavigator)).EndInit();
             this.clienteBindingNavigator.ResumeLayout(false);
             this.clienteBindingNavigator.PerformLayout();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteDataGridView)).EndInit();
             this.groupBoxDetalhesCliente.ResumeLayout(false);
             this.groupBoxDetalhesCliente.PerformLayout();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.clienteDataGridView)).EndInit();
+            this.groupBoxDetalhesCliente.ResumeLayout(false);
+            this.groupBoxDetalhesCliente.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
+>>>>>>> V.Daniel
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -548,7 +685,10 @@
         private System.Windows.Forms.ToolStripButton clienteBindingNavigatorSaveItem;
         private System.Windows.Forms.DataGridView clienteDataGridView;
         private System.Windows.Forms.TextBox contactoTextBox;
+<<<<<<< HEAD
         private System.Windows.Forms.TextBox idClienteTextBox;
+=======
+>>>>>>> V.Daniel
         private System.Windows.Forms.TextBox moradaTextBox;
         private System.Windows.Forms.TextBox nIFTextBox;
         private System.Windows.Forms.TextBox nomeTextBox;
@@ -568,10 +708,15 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumnIDCliente;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+<<<<<<< HEAD
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+=======
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+>>>>>>> V.Daniel
     }
 }
