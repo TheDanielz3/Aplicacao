@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label contactoLabel;
-            System.Windows.Forms.Label idClienteLabel;
             System.Windows.Forms.Label moradaLabel;
             System.Windows.Forms.Label nIFLabel;
             System.Windows.Forms.Label nomeLabel;
@@ -50,7 +49,6 @@
             this.clienteBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.clienteDataGridView = new System.Windows.Forms.DataGridView();
             this.contactoTextBox = new System.Windows.Forms.TextBox();
-            this.idClienteTextBox = new System.Windows.Forms.TextBox();
             this.moradaTextBox = new System.Windows.Forms.TextBox();
             this.nIFTextBox = new System.Windows.Forms.TextBox();
             this.nomeTextBox = new System.Windows.Forms.TextBox();
@@ -67,17 +65,13 @@
             this.textBoxFilterCliente = new System.Windows.Forms.TextBox();
             this.comboBoxCliente = new System.Windows.Forms.ComboBox();
             this.buttonFiltrar = new System.Windows.Forms.Button();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumnIDCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             contactoLabel = new System.Windows.Forms.Label();
-            idClienteLabel = new System.Windows.Forms.Label();
             moradaLabel = new System.Windows.Forms.Label();
             nIFLabel = new System.Windows.Forms.Label();
             nomeLabel = new System.Windows.Forms.Label();
@@ -91,25 +85,16 @@
             // contactoLabel
             // 
             contactoLabel.AutoSize = true;
-            contactoLabel.Location = new System.Drawing.Point(31, 106);
+            contactoLabel.Location = new System.Drawing.Point(31, 97);
             contactoLabel.Name = "contactoLabel";
             contactoLabel.Size = new System.Drawing.Size(53, 13);
             contactoLabel.TabIndex = 2;
             contactoLabel.Text = "Contacto:";
             // 
-            // idClienteLabel
-            // 
-            idClienteLabel.AutoSize = true;
-            idClienteLabel.Location = new System.Drawing.Point(31, 30);
-            idClienteLabel.Name = "idClienteLabel";
-            idClienteLabel.Size = new System.Drawing.Size(54, 13);
-            idClienteLabel.TabIndex = 4;
-            idClienteLabel.Text = "Id Cliente:";
-            // 
             // moradaLabel
             // 
             moradaLabel.AutoSize = true;
-            moradaLabel.Location = new System.Drawing.Point(31, 132);
+            moradaLabel.Location = new System.Drawing.Point(31, 123);
             moradaLabel.Name = "moradaLabel";
             moradaLabel.Size = new System.Drawing.Size(46, 13);
             moradaLabel.TabIndex = 6;
@@ -118,7 +103,7 @@
             // nIFLabel
             // 
             nIFLabel.AutoSize = true;
-            nIFLabel.Location = new System.Drawing.Point(31, 80);
+            nIFLabel.Location = new System.Drawing.Point(31, 71);
             nIFLabel.Name = "nIFLabel";
             nIFLabel.Size = new System.Drawing.Size(27, 13);
             nIFLabel.TabIndex = 8;
@@ -127,7 +112,7 @@
             // nomeLabel
             // 
             nomeLabel.AutoSize = true;
-            nomeLabel.Location = new System.Drawing.Point(31, 56);
+            nomeLabel.Location = new System.Drawing.Point(31, 45);
             nomeLabel.Name = "nomeLabel";
             nomeLabel.Size = new System.Drawing.Size(38, 13);
             nomeLabel.TabIndex = 10;
@@ -260,42 +245,35 @@
             // clienteDataGridView
             // 
             this.clienteDataGridView.AutoGenerateColumns = false;
+            this.clienteDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.clienteDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.clienteDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumnIDCliente,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8});
+            this.dataGridViewTextBoxColumn4});
             this.clienteDataGridView.DataSource = this.clienteBindingSource;
             this.clienteDataGridView.Location = new System.Drawing.Point(0, 121);
             this.clienteDataGridView.Name = "clienteDataGridView";
-            this.clienteDataGridView.Size = new System.Drawing.Size(542, 573);
+            this.clienteDataGridView.ReadOnly = true;
+            this.clienteDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.clienteDataGridView.Size = new System.Drawing.Size(542, 501);
             this.clienteDataGridView.TabIndex = 1;
+            this.clienteDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.clienteDataGridView_CellContentClick);
             // 
             // contactoTextBox
             // 
             this.contactoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Contacto", true));
-            this.contactoTextBox.Location = new System.Drawing.Point(91, 103);
+            this.contactoTextBox.Location = new System.Drawing.Point(91, 94);
             this.contactoTextBox.Name = "contactoTextBox";
             this.contactoTextBox.Size = new System.Drawing.Size(100, 20);
             this.contactoTextBox.TabIndex = 3;
             // 
-            // idClienteTextBox
-            // 
-            this.idClienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "IdCliente", true));
-            this.idClienteTextBox.Location = new System.Drawing.Point(91, 27);
-            this.idClienteTextBox.Name = "idClienteTextBox";
-            this.idClienteTextBox.Size = new System.Drawing.Size(100, 20);
-            this.idClienteTextBox.TabIndex = 5;
-            // 
             // moradaTextBox
             // 
             this.moradaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Morada", true));
-            this.moradaTextBox.Location = new System.Drawing.Point(91, 129);
+            this.moradaTextBox.Location = new System.Drawing.Point(91, 120);
             this.moradaTextBox.Name = "moradaTextBox";
             this.moradaTextBox.Size = new System.Drawing.Size(100, 20);
             this.moradaTextBox.TabIndex = 7;
@@ -303,7 +281,7 @@
             // nIFTextBox
             // 
             this.nIFTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "NIF", true));
-            this.nIFTextBox.Location = new System.Drawing.Point(91, 77);
+            this.nIFTextBox.Location = new System.Drawing.Point(91, 68);
             this.nIFTextBox.Name = "nIFTextBox";
             this.nIFTextBox.Size = new System.Drawing.Size(100, 20);
             this.nIFTextBox.TabIndex = 9;
@@ -311,7 +289,7 @@
             // nomeTextBox
             // 
             this.nomeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Nome", true));
-            this.nomeTextBox.Location = new System.Drawing.Point(91, 53);
+            this.nomeTextBox.Location = new System.Drawing.Point(91, 42);
             this.nomeTextBox.Name = "nomeTextBox";
             this.nomeTextBox.Size = new System.Drawing.Size(100, 20);
             this.nomeTextBox.TabIndex = 11;
@@ -321,9 +299,7 @@
             this.groupBoxDetalhesCliente.Controls.Add(contactoLabel);
             this.groupBoxDetalhesCliente.Controls.Add(this.listBox3);
             this.groupBoxDetalhesCliente.Controls.Add(this.contactoTextBox);
-            this.groupBoxDetalhesCliente.Controls.Add(idClienteLabel);
             this.groupBoxDetalhesCliente.Controls.Add(this.labelAquisicoes);
-            this.groupBoxDetalhesCliente.Controls.Add(this.idClienteTextBox);
             this.groupBoxDetalhesCliente.Controls.Add(this.listBox2);
             this.groupBoxDetalhesCliente.Controls.Add(moradaLabel);
             this.groupBoxDetalhesCliente.Controls.Add(this.labelArrendamentos);
@@ -338,7 +314,7 @@
             this.groupBoxDetalhesCliente.Controls.Add(this.nomeTextBox);
             this.groupBoxDetalhesCliente.Location = new System.Drawing.Point(578, 121);
             this.groupBoxDetalhesCliente.Name = "groupBoxDetalhesCliente";
-            this.groupBoxDetalhesCliente.Size = new System.Drawing.Size(300, 600);
+            this.groupBoxDetalhesCliente.Size = new System.Drawing.Size(300, 575);
             this.groupBoxDetalhesCliente.TabIndex = 12;
             this.groupBoxDetalhesCliente.TabStop = false;
             this.groupBoxDetalhesCliente.Text = "Detalhes";
@@ -346,7 +322,7 @@
             // listBox3
             // 
             this.listBox3.FormattingEnabled = true;
-            this.listBox3.Location = new System.Drawing.Point(31, 478);
+            this.listBox3.Location = new System.Drawing.Point(31, 462);
             this.listBox3.Name = "listBox3";
             this.listBox3.Size = new System.Drawing.Size(243, 95);
             this.listBox3.TabIndex = 7;
@@ -354,7 +330,7 @@
             // labelAquisicoes
             // 
             this.labelAquisicoes.AutoSize = true;
-            this.labelAquisicoes.Location = new System.Drawing.Point(31, 462);
+            this.labelAquisicoes.Location = new System.Drawing.Point(31, 446);
             this.labelAquisicoes.Name = "labelAquisicoes";
             this.labelAquisicoes.Size = new System.Drawing.Size(58, 13);
             this.labelAquisicoes.TabIndex = 6;
@@ -363,7 +339,7 @@
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(34, 355);
+            this.listBox2.Location = new System.Drawing.Point(31, 341);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(240, 95);
             this.listBox2.TabIndex = 5;
@@ -371,7 +347,7 @@
             // labelArrendamentos
             // 
             this.labelArrendamentos.AutoSize = true;
-            this.labelArrendamentos.Location = new System.Drawing.Point(31, 339);
+            this.labelArrendamentos.Location = new System.Drawing.Point(28, 325);
             this.labelArrendamentos.Name = "labelArrendamentos";
             this.labelArrendamentos.Size = new System.Drawing.Size(81, 13);
             this.labelArrendamentos.TabIndex = 4;
@@ -380,7 +356,7 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(31, 228);
+            this.listBox1.Location = new System.Drawing.Point(31, 219);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(243, 95);
             this.listBox1.TabIndex = 3;
@@ -388,7 +364,7 @@
             // labelCasas
             // 
             this.labelCasas.AutoSize = true;
-            this.labelCasas.Location = new System.Drawing.Point(31, 212);
+            this.labelCasas.Location = new System.Drawing.Point(31, 203);
             this.labelCasas.Name = "labelCasas";
             this.labelCasas.Size = new System.Drawing.Size(39, 13);
             this.labelCasas.TabIndex = 2;
@@ -402,6 +378,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Novo";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -411,15 +388,17 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // buttonApagar
             // 
-            this.buttonApagar.Location = new System.Drawing.Point(12, 700);
+            this.buttonApagar.Location = new System.Drawing.Point(0, 642);
             this.buttonApagar.Name = "buttonApagar";
-            this.buttonApagar.Size = new System.Drawing.Size(510, 23);
+            this.buttonApagar.Size = new System.Drawing.Size(542, 49);
             this.buttonApagar.TabIndex = 13;
             this.buttonApagar.Text = "Apagar";
             this.buttonApagar.UseVisualStyleBackColor = true;
+            this.buttonApagar.Click += new System.EventHandler(this.buttonApagar_Click);
             // 
             // textBoxFilterCliente
             // 
@@ -447,53 +426,40 @@
             this.buttonFiltrar.UseVisualStyleBackColor = true;
             this.buttonFiltrar.Click += new System.EventHandler(this.buttonFiltrar_Click);
             // 
-            // dataGridViewTextBoxColumn1
+            // dataGridViewTextBoxColumnIDCliente
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "IdCliente";
-            this.dataGridViewTextBoxColumn1.HeaderText = "IdCliente";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumnIDCliente.DataPropertyName = "IdCliente";
+            this.dataGridViewTextBoxColumnIDCliente.HeaderText = "IdCliente";
+            this.dataGridViewTextBoxColumnIDCliente.Name = "dataGridViewTextBoxColumnIDCliente";
+            this.dataGridViewTextBoxColumnIDCliente.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Nome";
             this.dataGridViewTextBoxColumn2.HeaderText = "Nome";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "NIF";
             this.dataGridViewTextBoxColumn3.HeaderText = "NIF";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Morada";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Morada";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "Contacto";
             this.dataGridViewTextBoxColumn5.HeaderText = "Contacto";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn6
+            // dataGridViewTextBoxColumn4
             // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Arrendamentos";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Arrendamentos";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Casas";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Casas";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Aquisicoes";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Aquisicoes";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Morada";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Morada";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
             // clienteBindingSource
             // 
@@ -503,7 +469,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(894, 733);
+            this.ClientSize = new System.Drawing.Size(894, 703);
             this.Controls.Add(this.buttonFiltrar);
             this.Controls.Add(this.comboBoxCliente);
             this.Controls.Add(this.textBoxFilterCliente);
@@ -543,16 +509,7 @@
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton clienteBindingNavigatorSaveItem;
         private System.Windows.Forms.DataGridView clienteDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.TextBox contactoTextBox;
-        private System.Windows.Forms.TextBox idClienteTextBox;
         private System.Windows.Forms.TextBox moradaTextBox;
         private System.Windows.Forms.TextBox nIFTextBox;
         private System.Windows.Forms.TextBox nomeTextBox;
@@ -569,5 +526,10 @@
         private System.Windows.Forms.TextBox textBoxFilterCliente;
         private System.Windows.Forms.ComboBox comboBoxCliente;
         private System.Windows.Forms.Button buttonFiltrar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumnIDCliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
     }
 }
