@@ -1,13 +1,13 @@
-1º Sprint (7 de maio a 29 de maio)
+1Âº Sprint (7 de maio a 29 de maio)
 
 Sprint Backlog
 
-- Modelo de dados
-- Parte gráfica
-- Filtrar por Nome, NIF e Contacto
-- Inserir Novo Cliente
-- Apagar Cliente
-- Guardar Cliente na BD
+- Modelo de dados(feito)
+- Parte grÃ¡fica(feito)
+- Filtrar por Nome, NIF e Contacto(feito)
+- Inserir Novo Cliente(feito)
+- Apagar Cliente(feito)
+- Guardar Cliente na BD(feito)
 - Inserir Nova Casa
 - Apagar Casa
 - Guardar Casa na BD
