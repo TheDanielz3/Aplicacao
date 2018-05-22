@@ -2,12 +2,12 @@
 
 Sprint Backlog
 
-- Modelo de dados
-- Parte gráfica
-- Filtrar por Nome, NIF e Contacto
-- Inserir Novo Cliente
-- Apagar Cliente
-- Guardar Cliente na BD
+- Modelo de dados (feito)
+- Parte gráfica (feito)
+- Filtrar por Nome, NIF e Contacto (feito)
+- Inserir Novo Cliente (feito)
+- Apagar Cliente (feito)
+- Guardar Cliente na BD (feito)
 - Inserir Nova Casa
 - Apagar Casa
 - Guardar Casa na BD
