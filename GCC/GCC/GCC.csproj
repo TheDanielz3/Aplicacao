@@ -66,6 +66,7 @@
     <Compile Include="CasaVendavel.cs">
       <DependentUpon>GCCDM.tt</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Cliente.cs" />
     <Compile Include="Cliente.cs">
       <DependentUpon>GCCDM.tt</DependentUpon>
     </Compile>

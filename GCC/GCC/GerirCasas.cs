@@ -12,9 +12,18 @@ namespace GCC
 {
     public partial class GerirCasas : Form
     {
+        private GCCDMContainer context;
+        
         public GerirCasas()
         {
             InitializeComponent();
+
+            context = new GCCDMContainer();
+
+            foreach (Cliente cliente in context.ClienteSet)
+            {
+                proprietarioComboBox.Items.Add(cliente);
+            }
         }
 
         private void numeroLabel_Click(object sender, EventArgs e)
