@@ -20,13 +20,9 @@ namespace GCC
             tipoComboBox.Items.Add("Apatamento");
             tipoComboBox.Items.Add("Casota de cão");
                             
-
             context = new GCCDMContainer();
-
-            foreach (Cliente cliente in context.ClienteSet)
-            {
-                proprietarioComboBox.Items.Add(cliente);
-            }
+            
+            proprietarioComboBox.DataSource = context.ClienteSet.ToList();
         }
 
         private void numeroLabel_Click(object sender, EventArgs e)
@@ -63,10 +59,11 @@ namespace GCC
 
         }
 
+        //Ao clicar fecha a groupbox contrária
         private void checkBoxArrendavel_CheckedChanged(object sender, EventArgs e)
         {
-            valorBaseVendaTextBox.ReadOnly = true;
-            valorComissaoTextBox.ReadOnly = true;
+            groupBoxDadosArrendamento.CanSelect.Equals(false);
+            groupBoxDadosVenda.Enabled = false;
         }
 
         private void checkBoxVendavel_CheckedChanged(object sender, EventArgs e)
@@ -87,7 +84,6 @@ namespace GCC
             tempCasa.NumeroWC = Convert.ToString(numeroWCNumericUpDown);
             tempCasa.NumeroPisos = Convert.ToString(numeroPisosNumericUpDown);
             tempCasa.Tipo = tipoComboBox.SelectedIndex.ToString();
-            //tempCasa.Proprietario = ;
         }
     }
 }

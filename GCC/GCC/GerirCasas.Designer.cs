@@ -41,10 +41,11 @@
             System.Windows.Forms.Label valorBaseMesLabel;
             System.Windows.Forms.Label valorBaseVendaLabel;
             System.Windows.Forms.Label valorComissaoLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GerirCasas));
             System.Windows.Forms.Label areaLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GerirCasas));
             this.casaBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.casaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -57,36 +58,6 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.casaBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.casaDataGridView = new System.Windows.Forms.DataGridView();
-            this.groupBoxDetalhesCasas = new System.Windows.Forms.GroupBox();
-            this.buttonNovaCasa = new System.Windows.Forms.Button();
-            this.buttonGuardarCasa = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.groupBoxDadosVenda = new System.Windows.Forms.GroupBox();
-            this.buttonVerVenda = new System.Windows.Forms.Button();
-            this.labelEuro4 = new System.Windows.Forms.Label();
-            this.labelEuro3 = new System.Windows.Forms.Label();
-            this.valorComissaoTextBox = new System.Windows.Forms.TextBox();
-            this.valorBaseVendaTextBox = new System.Windows.Forms.TextBox();
-            this.groupBoxDadosArrendamento = new System.Windows.Forms.GroupBox();
-            this.buttonVerCriarArrendamento = new System.Windows.Forms.Button();
-            this.labelEuro2 = new System.Windows.Forms.Label();
-            this.labelEuro1 = new System.Windows.Forms.Label();
-            this.valorBaseMesTextBox = new System.Windows.Forms.TextBox();
-            this.comissaoTextBox = new System.Windows.Forms.TextBox();
-            this.checkBoxVendavel = new System.Windows.Forms.CheckBox();
-            this.checkBoxArrendavel = new System.Windows.Forms.CheckBox();
-            this.proprietarioComboBox = new System.Windows.Forms.ComboBox();
-            this.localidadeTextBox = new System.Windows.Forms.TextBox();
-            this.numeroAssoalhadasNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.numeroPisosNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.numeroWCNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.ruaTextBox = new System.Windows.Forms.TextBox();
-            this.tipoComboBox = new System.Windows.Forms.ComboBox();
-            this.buttonApagarCasa = new System.Windows.Forms.Button();
-            this.areaNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.casaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.casaVendavelBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.casaArrendavelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -98,7 +69,36 @@
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBoxDetalhesCasas = new System.Windows.Forms.GroupBox();
             this.numeroNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.areaNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.buttonNovaCasa = new System.Windows.Forms.Button();
+            this.buttonGuardarCasa = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.groupBoxDadosVenda = new System.Windows.Forms.GroupBox();
+            this.buttonVerVenda = new System.Windows.Forms.Button();
+            this.labelEuro4 = new System.Windows.Forms.Label();
+            this.labelEuro3 = new System.Windows.Forms.Label();
+            this.valorComissaoTextBox = new System.Windows.Forms.TextBox();
+            this.casaVendavelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.valorBaseVendaTextBox = new System.Windows.Forms.TextBox();
+            this.groupBoxDadosArrendamento = new System.Windows.Forms.GroupBox();
+            this.buttonVerCriarArrendamento = new System.Windows.Forms.Button();
+            this.labelEuro2 = new System.Windows.Forms.Label();
+            this.labelEuro1 = new System.Windows.Forms.Label();
+            this.valorBaseMesTextBox = new System.Windows.Forms.TextBox();
+            this.casaArrendavelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.comissaoTextBox = new System.Windows.Forms.TextBox();
+            this.checkBoxVendavel = new System.Windows.Forms.CheckBox();
+            this.checkBoxArrendavel = new System.Windows.Forms.CheckBox();
+            this.proprietarioComboBox = new System.Windows.Forms.ComboBox();
+            this.localidadeTextBox = new System.Windows.Forms.TextBox();
+            this.numeroAssoalhadasNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.numeroPisosNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.numeroWCNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.ruaTextBox = new System.Windows.Forms.TextBox();
+            this.tipoComboBox = new System.Windows.Forms.ComboBox();
+            this.buttonApagarCasa = new System.Windows.Forms.Button();
             localidadeLabel = new System.Windows.Forms.Label();
             numeroLabel = new System.Windows.Forms.Label();
             numeroAssoalhadasLabel = new System.Windows.Forms.Label();
@@ -114,18 +114,18 @@
             areaLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.casaBindingNavigator)).BeginInit();
             this.casaBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.casaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.casaDataGridView)).BeginInit();
             this.groupBoxDetalhesCasas.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numeroNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.areaNumericUpDown)).BeginInit();
             this.groupBoxDadosVenda.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.casaVendavelBindingSource)).BeginInit();
             this.groupBoxDadosArrendamento.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.casaArrendavelBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeroAssoalhadasNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeroPisosNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeroWCNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.areaNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.casaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.casaVendavelBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.casaArrendavelBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeroNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // localidadeLabel
@@ -237,6 +237,15 @@
             valorComissaoLabel.TabIndex = 2;
             valorComissaoLabel.Text = "Comissao Base:";
             // 
+            // areaLabel
+            // 
+            areaLabel.AutoSize = true;
+            areaLabel.Location = new System.Drawing.Point(72, 115);
+            areaLabel.Name = "areaLabel";
+            areaLabel.Size = new System.Drawing.Size(32, 13);
+            areaLabel.TabIndex = 29;
+            areaLabel.Text = "Area:";
+            // 
             // casaBindingNavigator
             // 
             this.casaBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
@@ -275,6 +284,10 @@
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // casaBindingSource
+            // 
+            this.casaBindingSource.DataSource = typeof(GCC.Casa);
             // 
             // bindingNavigatorCountItem
             // 
@@ -383,6 +396,72 @@
             this.casaDataGridView.Size = new System.Drawing.Size(344, 556);
             this.casaDataGridView.TabIndex = 1;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "IdCasa";
+            this.dataGridViewTextBoxColumn1.HeaderText = "IdCasa";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Localidade";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Localidade";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Rua";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Rua";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Numero";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Numero";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Area";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Area";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "NumeroAssoalhadas";
+            this.dataGridViewTextBoxColumn6.HeaderText = "NumeroAssoalhadas";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "NumeroWC";
+            this.dataGridViewTextBoxColumn7.HeaderText = "NumeroWC";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "NumeroPisos";
+            this.dataGridViewTextBoxColumn8.HeaderText = "NumeroPisos";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "Tipo";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Tipo";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Proprietario";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Proprietario";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "Limpezas";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Limpezas";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
             // groupBoxDetalhesCasas
             // 
             this.groupBoxDetalhesCasas.Controls.Add(this.numeroNumericUpDown);
@@ -416,6 +495,22 @@
             this.groupBoxDetalhesCasas.TabIndex = 2;
             this.groupBoxDetalhesCasas.TabStop = false;
             this.groupBoxDetalhesCasas.Text = "Detalhes";
+            // 
+            // numeroNumericUpDown
+            // 
+            this.numeroNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.casaBindingSource, "Numero", true));
+            this.numeroNumericUpDown.Location = new System.Drawing.Point(188, 87);
+            this.numeroNumericUpDown.Name = "numeroNumericUpDown";
+            this.numeroNumericUpDown.Size = new System.Drawing.Size(224, 20);
+            this.numeroNumericUpDown.TabIndex = 31;
+            // 
+            // areaNumericUpDown
+            // 
+            this.areaNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.casaBindingSource, "Area", true));
+            this.areaNumericUpDown.Location = new System.Drawing.Point(188, 113);
+            this.areaNumericUpDown.Name = "areaNumericUpDown";
+            this.areaNumericUpDown.Size = new System.Drawing.Size(224, 20);
+            this.areaNumericUpDown.TabIndex = 30;
             // 
             // buttonNovaCasa
             // 
@@ -498,6 +593,10 @@
             this.valorComissaoTextBox.TabIndex = 3;
             this.valorComissaoTextBox.TextChanged += new System.EventHandler(this.valorComissaoTextBox_TextChanged);
             // 
+            // casaVendavelBindingSource
+            // 
+            this.casaVendavelBindingSource.DataSource = typeof(GCC.CasaVendavel);
+            // 
             // valorBaseVendaTextBox
             // 
             this.valorBaseVendaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.casaVendavelBindingSource, "ValorBaseVenda", true));
@@ -557,6 +656,10 @@
             this.valorBaseMesTextBox.Size = new System.Drawing.Size(148, 20);
             this.valorBaseMesTextBox.TabIndex = 3;
             // 
+            // casaArrendavelBindingSource
+            // 
+            this.casaArrendavelBindingSource.DataSource = typeof(GCC.CasaArrendavel);
+            // 
             // comissaoTextBox
             // 
             this.comissaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.casaArrendavelBindingSource, "Comissao", true));
@@ -590,6 +693,7 @@
             // proprietarioComboBox
             // 
             this.proprietarioComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.casaBindingSource, "Proprietario", true));
+            this.proprietarioComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.proprietarioComboBox.FormattingEnabled = true;
             this.proprietarioComboBox.Location = new System.Drawing.Point(188, 251);
             this.proprietarioComboBox.Name = "proprietarioComboBox";
@@ -640,6 +744,7 @@
             // tipoComboBox
             // 
             this.tipoComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.casaBindingSource, "Tipo", true));
+            this.tipoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.tipoComboBox.FormattingEnabled = true;
             this.tipoComboBox.Location = new System.Drawing.Point(188, 224);
             this.tipoComboBox.Name = "tipoComboBox";
@@ -655,114 +760,11 @@
             this.buttonApagarCasa.Text = "Apagar";
             this.buttonApagarCasa.UseVisualStyleBackColor = true;
             // 
-            // areaLabel
-            // 
-            areaLabel.AutoSize = true;
-            areaLabel.Location = new System.Drawing.Point(72, 115);
-            areaLabel.Name = "areaLabel";
-            areaLabel.Size = new System.Drawing.Size(32, 13);
-            areaLabel.TabIndex = 29;
-            areaLabel.Text = "Area:";
-            // 
-            // areaNumericUpDown
-            // 
-            this.areaNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.casaBindingSource, "Area", true));
-            this.areaNumericUpDown.Location = new System.Drawing.Point(188, 113);
-            this.areaNumericUpDown.Name = "areaNumericUpDown";
-            this.areaNumericUpDown.Size = new System.Drawing.Size(224, 20);
-            this.areaNumericUpDown.TabIndex = 30;
-            // 
-            // casaBindingSource
-            // 
-            this.casaBindingSource.DataSource = typeof(GCC.Casa);
-            // 
-            // casaVendavelBindingSource
-            // 
-            this.casaVendavelBindingSource.DataSource = typeof(GCC.CasaVendavel);
-            // 
-            // casaArrendavelBindingSource
-            // 
-            this.casaArrendavelBindingSource.DataSource = typeof(GCC.CasaArrendavel);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "IdCasa";
-            this.dataGridViewTextBoxColumn1.HeaderText = "IdCasa";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Localidade";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Localidade";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Rua";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Rua";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Numero";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Numero";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Area";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Area";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "NumeroAssoalhadas";
-            this.dataGridViewTextBoxColumn6.HeaderText = "NumeroAssoalhadas";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "NumeroWC";
-            this.dataGridViewTextBoxColumn7.HeaderText = "NumeroWC";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "NumeroPisos";
-            this.dataGridViewTextBoxColumn8.HeaderText = "NumeroPisos";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "Tipo";
-            this.dataGridViewTextBoxColumn9.HeaderText = "Tipo";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "Proprietario";
-            this.dataGridViewTextBoxColumn10.HeaderText = "Proprietario";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "Limpezas";
-            this.dataGridViewTextBoxColumn11.HeaderText = "Limpezas";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            // 
-            // numeroNumericUpDown
-            // 
-            this.numeroNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.casaBindingSource, "Numero", true));
-            this.numeroNumericUpDown.Location = new System.Drawing.Point(188, 87);
-            this.numeroNumericUpDown.Name = "numeroNumericUpDown";
-            this.numeroNumericUpDown.Size = new System.Drawing.Size(224, 20);
-            this.numeroNumericUpDown.TabIndex = 31;
-            // 
             // GerirCasas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(880, 735);
+            this.ClientSize = new System.Drawing.Size(880, 733);
             this.Controls.Add(this.buttonApagarCasa);
             this.Controls.Add(this.groupBoxDetalhesCasas);
             this.Controls.Add(this.casaDataGridView);
@@ -772,21 +774,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.casaBindingNavigator)).EndInit();
             this.casaBindingNavigator.ResumeLayout(false);
             this.casaBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.casaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.casaDataGridView)).EndInit();
             this.groupBoxDetalhesCasas.ResumeLayout(false);
             this.groupBoxDetalhesCasas.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numeroNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.areaNumericUpDown)).EndInit();
             this.groupBoxDadosVenda.ResumeLayout(false);
             this.groupBoxDadosVenda.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.casaVendavelBindingSource)).EndInit();
             this.groupBoxDadosArrendamento.ResumeLayout(false);
             this.groupBoxDadosArrendamento.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.casaArrendavelBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeroAssoalhadasNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeroPisosNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numeroWCNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.areaNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.casaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.casaVendavelBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.casaArrendavelBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numeroNumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
