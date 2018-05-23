@@ -14,15 +14,16 @@ namespace GCC
     {
         private GCCDMContainer context;
         
-        public GerirCasas()
+        public GerirCasas(GCCDMContainer context)
         {
             InitializeComponent();
-            tipoComboBox.Items.Add("Apatamento");
-            tipoComboBox.Items.Add("Casota de cão");
-                            
-            context = new GCCDMContainer();
+            tipoComboBox.Items.Add("Vivenda");
+            tipoComboBox.Items.Add("Apartamento");
+
+            this.context = context;
             
-            proprietarioComboBox.DataSource = context.ClienteSet.ToList();
+            //proprietarioComboBox.DataSource = context.ClienteSet.ToList();
+            casaDataGridView.DataSource = context.CasaSet.ToList();
         }
 
         private void numeroLabel_Click(object sender, EventArgs e)
@@ -62,14 +63,12 @@ namespace GCC
         //Ao clicar fecha a groupbox contrária
         private void checkBoxArrendavel_CheckedChanged(object sender, EventArgs e)
         {
-            groupBoxDadosArrendamento.CanSelect.Equals(false);
             groupBoxDadosVenda.Enabled = false;
         }
 
         private void checkBoxVendavel_CheckedChanged(object sender, EventArgs e)
         {
-            valorBaseMesTextBox.ReadOnly = true;
-            comissaoTextBox.ReadOnly = true;
+            groupBoxDadosArrendamento.Enabled = false;
         }
 
         private void buttonGuardarCasa_Click(object sender, EventArgs e)
@@ -84,6 +83,34 @@ namespace GCC
             tempCasa.NumeroWC = Convert.ToString(numeroWCNumericUpDown);
             tempCasa.NumeroPisos = Convert.ToString(numeroPisosNumericUpDown);
             tempCasa.Tipo = tipoComboBox.SelectedIndex.ToString();
+            tempCasa.Proprietario = ((Cliente)proprietarioComboBox.SelectedItem);
+
+            context.CasaSet.Add(tempCasa);
+
+            context.SaveChanges();
+
+            //casaDataGridView.DataSource = context.CasaSet.ToList();
+        }
+
+        //Botão Gerir_limpezas
+        private void button1_Click(object sender, EventArgs e)
+        {
+            GerirLimpezas gerirLimpezas = new GerirLimpezas();
+
+            gerirLimpezas.Show();
+        }
+
+        private void buttonApagarCasa_Click(object sender, EventArgs e)
+        {
+            Casa casaSelecionada = (Casa) casaDataGridView.CurrentRow.DataBoundItem;
+
+            //Remove
+            context.CasaSet.Remove(casaSelecionada);
+
+            context.SaveChanges();
+
+            //Atualiza a datagridview
+            casaDataGridView.DataSource = context.CasaSet.ToList();
         }
     }
 }

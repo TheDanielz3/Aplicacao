@@ -15,16 +15,15 @@ namespace GCC
     {
         private GCCDMContainer context;
 
-        public GerirClientes()
+        public GerirClientes(GCCDMContainer context)
         {
             InitializeComponent();
+
+            this.context = context;
 
             comboBoxCliente.Items.Add("Nome");
             comboBoxCliente.Items.Add("NIF");
             comboBoxCliente.Items.Add("Contacto");
-
-            context = new GCCDMContainer();
-
             clienteDataGridView.DataSource = context.ClienteSet.ToList();
         }
         
@@ -70,7 +69,7 @@ namespace GCC
                     else
                     {
                         MessageBox.Show("Não existe tal campo", "Em falta", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
-                    };
+                    }
                 }
             
             }
@@ -119,7 +118,7 @@ namespace GCC
 
         private void buttonApagar_Click(object sender, EventArgs e)
         {
-            Cliente clienteSelecionado = (Cliente) clienteDataGridView.SelectedRows[0].DataBoundItem;
+            Cliente clienteSelecionado = (Cliente) clienteDataGridView.CurrentRow.DataBoundItem;
 
 
             //Remover
@@ -135,6 +134,14 @@ namespace GCC
         private void clienteDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        //Listbox casas
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Cliente clienteSelecionado = (Cliente)clienteDataGridView.CurrentRow.DataBoundItem;
+            
+            listBox1.DataSource = clienteSelecionado.Casas.ToList();
         }
     }
 }
