@@ -79,7 +79,8 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Menu";
-            this.Text = "GCC";
+            this.Text = " ";
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

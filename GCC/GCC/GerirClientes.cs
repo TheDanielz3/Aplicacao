@@ -133,14 +133,16 @@ namespace GCC
 
         private void clienteDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            Cliente clienteSelecionado = (Cliente) clienteDataGridView.CurrentRow.DataBoundItem;
 
+            listBox1.DataSource = clienteSelecionado.Casas.ToList();
         }
 
         //Listbox casas
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             Cliente clienteSelecionado = (Cliente)clienteDataGridView.CurrentRow.DataBoundItem;
-            
+
             listBox1.DataSource = clienteSelecionado.Casas.ToList();
         }
     }

@@ -12,9 +12,19 @@ namespace GCC
 {
     public partial class GerirArrendamentos : Form
     {
-        public GerirArrendamentos()
+        private GCCDMContainer context;
+        private CasaArrendavel casa;
+
+        public GerirArrendamentos(GCCDMContainer context, CasaArrendavel casa)
         {
             InitializeComponent();
+
+            this.context = context;
+            this.casa = casa;
+
+            labelIdCasa.Text = casa.IdCasa.ToString();
+            labelLocalidade.Text = casa.Localidade.ToString();
+            labelProprietario.Text = casa.Proprietario.ToString();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -23,6 +33,11 @@ namespace GCC
         }
 
         private void renovavelLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+        
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

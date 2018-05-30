@@ -74,7 +74,6 @@
             this.casaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.casaVendavelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.casaArrendavelBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -235,7 +234,6 @@
             this.casaDataGridView.AutoGenerateColumns = false;
             this.casaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.casaDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn10,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
@@ -249,7 +247,7 @@
             this.casaDataGridView.DataSource = this.casaBindingSource;
             this.casaDataGridView.Location = new System.Drawing.Point(8, 39);
             this.casaDataGridView.Name = "casaDataGridView";
-            this.casaDataGridView.Size = new System.Drawing.Size(432, 550);
+            this.casaDataGridView.Size = new System.Drawing.Size(421, 541);
             this.casaDataGridView.TabIndex = 1;
             // 
             // groupBoxDetalhesCasas
@@ -304,7 +302,7 @@
             // 
             // buttonNovaCasa
             // 
-            this.buttonNovaCasa.Location = new System.Drawing.Point(337, 531);
+            this.buttonNovaCasa.Location = new System.Drawing.Point(337, 537);
             this.buttonNovaCasa.Name = "buttonNovaCasa";
             this.buttonNovaCasa.Size = new System.Drawing.Size(75, 23);
             this.buttonNovaCasa.TabIndex = 29;
@@ -314,7 +312,7 @@
             // 
             // buttonGuardarCasa
             // 
-            this.buttonGuardarCasa.Location = new System.Drawing.Point(22, 531);
+            this.buttonGuardarCasa.Location = new System.Drawing.Point(22, 537);
             this.buttonGuardarCasa.Name = "buttonGuardarCasa";
             this.buttonGuardarCasa.Size = new System.Drawing.Size(75, 23);
             this.buttonGuardarCasa.TabIndex = 28;
@@ -347,6 +345,7 @@
             this.groupBoxDadosVenda.TabIndex = 26;
             this.groupBoxDadosVenda.TabStop = false;
             this.groupBoxDadosVenda.Text = "Dados de Venda";
+            this.groupBoxDadosVenda.Enter += new System.EventHandler(this.groupBoxDadosVenda_Enter);
             // 
             // buttonVerVenda
             // 
@@ -356,11 +355,12 @@
             this.buttonVerVenda.TabIndex = 8;
             this.buttonVerVenda.Text = "Ver";
             this.buttonVerVenda.UseVisualStyleBackColor = true;
+            this.buttonVerVenda.Click += new System.EventHandler(this.buttonVerVenda_Click);
             // 
             // labelEuro4
             // 
             this.labelEuro4.AutoSize = true;
-            this.labelEuro4.Location = new System.Drawing.Point(124, 116);
+            this.labelEuro4.Location = new System.Drawing.Point(159, 116);
             this.labelEuro4.Name = "labelEuro4";
             this.labelEuro4.Size = new System.Drawing.Size(13, 13);
             this.labelEuro4.TabIndex = 7;
@@ -369,7 +369,7 @@
             // labelEuro3
             // 
             this.labelEuro3.AutoSize = true;
-            this.labelEuro3.Location = new System.Drawing.Point(124, 68);
+            this.labelEuro3.Location = new System.Drawing.Point(159, 68);
             this.labelEuro3.Name = "labelEuro3";
             this.labelEuro3.Size = new System.Drawing.Size(13, 13);
             this.labelEuro3.TabIndex = 6;
@@ -380,7 +380,7 @@
             this.valorComissaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.casaVendavelBindingSource, "ValorComissao", true));
             this.valorComissaoTextBox.Location = new System.Drawing.Point(18, 113);
             this.valorComissaoTextBox.Name = "valorComissaoTextBox";
-            this.valorComissaoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.valorComissaoTextBox.Size = new System.Drawing.Size(134, 20);
             this.valorComissaoTextBox.TabIndex = 3;
             this.valorComissaoTextBox.TextChanged += new System.EventHandler(this.valorComissaoTextBox_TextChanged);
             // 
@@ -389,7 +389,7 @@
             this.valorBaseVendaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.casaVendavelBindingSource, "ValorBaseVenda", true));
             this.valorBaseVendaTextBox.Location = new System.Drawing.Point(18, 65);
             this.valorBaseVendaTextBox.Name = "valorBaseVendaTextBox";
-            this.valorBaseVendaTextBox.Size = new System.Drawing.Size(100, 20);
+            this.valorBaseVendaTextBox.Size = new System.Drawing.Size(134, 20);
             this.valorBaseVendaTextBox.TabIndex = 1;
             // 
             // groupBoxDadosArrendamento
@@ -407,6 +407,7 @@
             this.groupBoxDadosArrendamento.TabIndex = 25;
             this.groupBoxDadosArrendamento.TabStop = false;
             this.groupBoxDadosArrendamento.Text = "Dados de Arrendamento";
+            this.groupBoxDadosArrendamento.Enter += new System.EventHandler(this.groupBoxDadosArrendamento_Enter);
             // 
             // buttonVerCriarArrendamento
             // 
@@ -416,6 +417,7 @@
             this.buttonVerCriarArrendamento.TabIndex = 6;
             this.buttonVerCriarArrendamento.Text = "Ver/Criar";
             this.buttonVerCriarArrendamento.UseVisualStyleBackColor = true;
+            this.buttonVerCriarArrendamento.Click += new System.EventHandler(this.buttonVerCriarArrendamento_Click);
             // 
             // labelEuro2
             // 
@@ -536,9 +538,9 @@
             // 
             // buttonApagarCasa
             // 
-            this.buttonApagarCasa.Location = new System.Drawing.Point(12, 602);
+            this.buttonApagarCasa.Location = new System.Drawing.Point(8, 590);
             this.buttonApagarCasa.Name = "buttonApagarCasa";
-            this.buttonApagarCasa.Size = new System.Drawing.Size(417, 23);
+            this.buttonApagarCasa.Size = new System.Drawing.Size(421, 35);
             this.buttonApagarCasa.TabIndex = 3;
             this.buttonApagarCasa.Text = "Apagar";
             this.buttonApagarCasa.UseVisualStyleBackColor = true;
@@ -555,12 +557,6 @@
             // casaArrendavelBindingSource
             // 
             this.casaArrendavelBindingSource.DataSource = typeof(GCC.CasaArrendavel);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "IdCasa";
-            this.dataGridViewTextBoxColumn1.HeaderText = "IdCasa";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
             // dataGridViewTextBoxColumn10
             // 
@@ -687,7 +683,6 @@
         private System.Windows.Forms.Button buttonApagarCasa;
         private System.Windows.Forms.NumericUpDown areaNumericUpDown;
         private System.Windows.Forms.NumericUpDown numeroNumericUpDown;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;

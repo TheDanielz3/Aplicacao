@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace GCC
 {
-     public partial class Cliente
+    public partial class Casa
     {
         public override string ToString()
         {
-            return this.Nome + ' ' + '(' + NIF + ')';
+            return this.Localidade;
         }
-    }
+    } 
 }
