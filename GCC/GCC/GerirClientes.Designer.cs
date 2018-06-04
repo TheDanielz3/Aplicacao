@@ -331,7 +331,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "GerirClientes";
-            this.Text = "GerirClientes";
+            this.Text = "Clientes";
             this.Load += new System.EventHandler(this.GerirClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.clienteDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();

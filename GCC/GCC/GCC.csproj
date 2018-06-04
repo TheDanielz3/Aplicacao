@@ -66,6 +66,7 @@
     <Compile Include="CasaVendavel.cs">
       <DependentUpon>GCCDM.tt</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Arrendamento.cs" />
     <Compile Include="Classes\Casa.cs" />
     <Compile Include="Classes\Cliente.cs" />
     <Compile Include="Cliente.cs">
@@ -153,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GerirLimpezas.resx">
       <DependentUpon>GerirLimpezas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GerirVendas.resx">
+      <DependentUpon>GerirVendas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>

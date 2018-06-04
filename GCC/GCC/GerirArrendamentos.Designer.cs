@@ -32,11 +32,9 @@
             System.Windows.Forms.Label inicioContratoLabel;
             System.Windows.Forms.Label duracaoMesesLabel;
             System.Windows.Forms.Label arrendatarioLabel;
-            System.Windows.Forms.Label casaArrendavelLabel;
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonRemoverArrendamento = new System.Windows.Forms.Button();
+            this.buttonInserirArrendamento = new System.Windows.Forms.Button();
             this.inicioContratoDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.arrendamentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.duracaoMesesNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.renovavelCheckBox = new System.Windows.Forms.CheckBox();
             this.arrendatarioComboBox = new System.Windows.Forms.ComboBox();
@@ -45,106 +43,102 @@
             this.labelIdCasa = new System.Windows.Forms.Label();
             this.labelLocalidade = new System.Windows.Forms.Label();
             this.labelProprietario = new System.Windows.Forms.Label();
+            this.arrendamentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             inicioContratoLabel = new System.Windows.Forms.Label();
             duracaoMesesLabel = new System.Windows.Forms.Label();
             arrendatarioLabel = new System.Windows.Forms.Label();
-            casaArrendavelLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.arrendamentoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.duracaoMesesNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arrendamentoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // inicioContratoLabel
             // 
             inicioContratoLabel.AutoSize = true;
-            inicioContratoLabel.Location = new System.Drawing.Point(526, 167);
+            inicioContratoLabel.Location = new System.Drawing.Point(437, 167);
             inicioContratoLabel.Name = "inicioContratoLabel";
             inicioContratoLabel.Size = new System.Drawing.Size(78, 13);
             inicioContratoLabel.TabIndex = 7;
             inicioContratoLabel.Text = "Inicio Contrato:";
+            inicioContratoLabel.Click += new System.EventHandler(this.inicioContratoLabel_Click);
             // 
             // duracaoMesesLabel
             // 
             duracaoMesesLabel.AutoSize = true;
-            duracaoMesesLabel.Location = new System.Drawing.Point(526, 227);
+            duracaoMesesLabel.Location = new System.Drawing.Point(437, 218);
             duracaoMesesLabel.Name = "duracaoMesesLabel";
             duracaoMesesLabel.Size = new System.Drawing.Size(85, 13);
             duracaoMesesLabel.TabIndex = 9;
             duracaoMesesLabel.Text = "Duracao Meses:";
+            duracaoMesesLabel.Click += new System.EventHandler(this.duracaoMesesLabel_Click);
             // 
             // arrendatarioLabel
             // 
             arrendatarioLabel.AutoSize = true;
-            arrendatarioLabel.Location = new System.Drawing.Point(526, 310);
+            arrendatarioLabel.Location = new System.Drawing.Point(446, 307);
             arrendatarioLabel.Name = "arrendatarioLabel";
             arrendatarioLabel.Size = new System.Drawing.Size(67, 13);
             arrendatarioLabel.TabIndex = 11;
             arrendatarioLabel.Text = "Arrendatario:";
+            arrendatarioLabel.Click += new System.EventHandler(this.arrendatarioLabel_Click);
             // 
-            // casaArrendavelLabel
+            // buttonRemoverArrendamento
             // 
-            casaArrendavelLabel.AutoSize = true;
-            casaArrendavelLabel.Location = new System.Drawing.Point(31, 129);
-            casaArrendavelLabel.Name = "casaArrendavelLabel";
-            casaArrendavelLabel.Size = new System.Drawing.Size(88, 13);
-            casaArrendavelLabel.TabIndex = 12;
-            casaArrendavelLabel.Text = "Casa Arrendavel:";
+            this.buttonRemoverArrendamento.Location = new System.Drawing.Point(52, 406);
+            this.buttonRemoverArrendamento.Name = "buttonRemoverArrendamento";
+            this.buttonRemoverArrendamento.Size = new System.Drawing.Size(330, 23);
+            this.buttonRemoverArrendamento.TabIndex = 0;
+            this.buttonRemoverArrendamento.Text = "Remover";
+            this.buttonRemoverArrendamento.UseVisualStyleBackColor = true;
+            this.buttonRemoverArrendamento.Click += new System.EventHandler(this.buttonRemoverArrendamento_Click);
             // 
-            // button1
+            // buttonInserirArrendamento
             // 
-            this.button1.Location = new System.Drawing.Point(52, 406);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(330, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(529, 343);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonInserirArrendamento.Location = new System.Drawing.Point(440, 354);
+            this.buttonInserirArrendamento.Name = "buttonInserirArrendamento";
+            this.buttonInserirArrendamento.Size = new System.Drawing.Size(200, 23);
+            this.buttonInserirArrendamento.TabIndex = 1;
+            this.buttonInserirArrendamento.Text = "Inserir";
+            this.buttonInserirArrendamento.UseVisualStyleBackColor = true;
+            this.buttonInserirArrendamento.Click += new System.EventHandler(this.buttonInserirArrendamento_Click);
             // 
             // inicioContratoDateTimePicker
             // 
             this.inicioContratoDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.arrendamentoBindingSource, "InicioContrato", true));
-            this.inicioContratoDateTimePicker.Location = new System.Drawing.Point(529, 183);
+            this.inicioContratoDateTimePicker.Location = new System.Drawing.Point(440, 183);
             this.inicioContratoDateTimePicker.Name = "inicioContratoDateTimePicker";
             this.inicioContratoDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.inicioContratoDateTimePicker.TabIndex = 8;
-            // 
-            // arrendamentoBindingSource
-            // 
-            this.arrendamentoBindingSource.DataSource = typeof(GCC.Arrendamento);
+            this.inicioContratoDateTimePicker.ValueChanged += new System.EventHandler(this.inicioContratoDateTimePicker_ValueChanged);
             // 
             // duracaoMesesNumericUpDown
             // 
             this.duracaoMesesNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.arrendamentoBindingSource, "DuracaoMeses", true));
-            this.duracaoMesesNumericUpDown.Location = new System.Drawing.Point(529, 243);
+            this.duracaoMesesNumericUpDown.Location = new System.Drawing.Point(440, 234);
             this.duracaoMesesNumericUpDown.Name = "duracaoMesesNumericUpDown";
             this.duracaoMesesNumericUpDown.Size = new System.Drawing.Size(120, 20);
             this.duracaoMesesNumericUpDown.TabIndex = 10;
+            this.duracaoMesesNumericUpDown.ValueChanged += new System.EventHandler(this.duracaoMesesNumericUpDown_ValueChanged);
             // 
             // renovavelCheckBox
             // 
             this.renovavelCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.arrendamentoBindingSource, "Renovavel", true));
-            this.renovavelCheckBox.Location = new System.Drawing.Point(529, 269);
+            this.renovavelCheckBox.Location = new System.Drawing.Point(440, 260);
             this.renovavelCheckBox.Name = "renovavelCheckBox";
             this.renovavelCheckBox.Size = new System.Drawing.Size(104, 24);
             this.renovavelCheckBox.TabIndex = 11;
             this.renovavelCheckBox.Text = "Renovavel";
             this.renovavelCheckBox.UseVisualStyleBackColor = true;
+            this.renovavelCheckBox.CheckedChanged += new System.EventHandler(this.renovavelCheckBox_CheckedChanged);
             // 
             // arrendatarioComboBox
             // 
             this.arrendatarioComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.arrendamentoBindingSource, "Arrendatario", true));
             this.arrendatarioComboBox.FormattingEnabled = true;
-            this.arrendatarioComboBox.Location = new System.Drawing.Point(599, 307);
+            this.arrendatarioComboBox.Location = new System.Drawing.Point(519, 304);
             this.arrendatarioComboBox.Name = "arrendatarioComboBox";
             this.arrendatarioComboBox.Size = new System.Drawing.Size(121, 21);
             this.arrendatarioComboBox.TabIndex = 12;
+            this.arrendatarioComboBox.SelectedIndexChanged += new System.EventHandler(this.arrendatarioComboBox_SelectedIndexChanged);
             // 
             // casaArrendavelListBox
             // 
@@ -192,16 +186,19 @@
             this.labelProprietario.TabIndex = 17;
             this.labelProprietario.Text = "sem proprietario";
             // 
+            // arrendamentoBindingSource
+            // 
+            this.arrendamentoBindingSource.DataSource = typeof(GCC.Arrendamento);
+            // 
             // GerirArrendamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(840, 450);
+            this.ClientSize = new System.Drawing.Size(662, 450);
             this.Controls.Add(this.labelProprietario);
             this.Controls.Add(this.labelLocalidade);
             this.Controls.Add(this.labelIdCasa);
             this.Controls.Add(this.labelCasa);
-            this.Controls.Add(casaArrendavelLabel);
             this.Controls.Add(this.casaArrendavelListBox);
             this.Controls.Add(arrendatarioLabel);
             this.Controls.Add(this.arrendatarioComboBox);
@@ -210,12 +207,13 @@
             this.Controls.Add(this.duracaoMesesNumericUpDown);
             this.Controls.Add(inicioContratoLabel);
             this.Controls.Add(this.inicioContratoDateTimePicker);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonInserirArrendamento);
+            this.Controls.Add(this.buttonRemoverArrendamento);
             this.Name = "GerirArrendamentos";
-            this.Text = "GerirArrendamentos";
-            ((System.ComponentModel.ISupportInitialize)(this.arrendamentoBindingSource)).EndInit();
+            this.Text = "Arrendamentos";
+            this.Load += new System.EventHandler(this.GerirArrendamentos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.duracaoMesesNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arrendamentoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,8 +221,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonRemoverArrendamento;
+        private System.Windows.Forms.Button buttonInserirArrendamento;
         private System.Windows.Forms.BindingSource arrendamentoBindingSource;
         private System.Windows.Forms.DateTimePicker inicioContratoDateTimePicker;
         private System.Windows.Forms.NumericUpDown duracaoMesesNumericUpDown;

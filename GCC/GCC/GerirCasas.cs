@@ -30,16 +30,6 @@ namespace GCC
             //Fecha as groupboxes
             groupBoxDadosArrendamento.Enabled = false;
             groupBoxDadosVenda.Enabled = false;
-
-            if(checkBoxArrendavel.Checked == true)
-            {
-                checkBoxVendavel.Checked = false;
-            }
-
-            if(checkBoxVendavel.Checked == true)
-            {
-                checkBoxArrendavel.Checked = false;
-            }
         }
 
         private void numeroLabel_Click(object sender, EventArgs e)
@@ -77,10 +67,9 @@ namespace GCC
 
         }
 
-        //Ao clicar na checkbox casa arrendavel fecha a vendavel
+        //Ao carregar no checkbox arrendavel
         private void checkBoxArrendavel_CheckedChanged(object sender, EventArgs e)
         {
-
             groupBoxDadosArrendamento.Enabled = false;
 
             if(checkBoxArrendavel.Checked == true)
@@ -90,7 +79,7 @@ namespace GCC
             }
         }
         
-        //Ao clicar na checkbox casa vendavel fecha a arrendavel
+        //Ao carregar no checkbox vendavel
         private void checkBoxVendavel_CheckedChanged(object sender, EventArgs e)
         {
             groupBoxDadosVenda.Enabled = false;
@@ -161,7 +150,6 @@ namespace GCC
            
             if(checkBoxArrendavel.Checked)
             {
-
                 CasaArrendavel tempCasaArrendavel = new CasaArrendavel();
 
                 tempCasaArrendavel.Localidade = localidadeTextBox.Text;
@@ -209,14 +197,14 @@ namespace GCC
 
                 return;
             }
-
-
         }
 
         //Botão Gerir_limpezas
         private void button1_Click(object sender, EventArgs e)
         {
-            GerirLimpezas gerirLimpezas = new GerirLimpezas();
+            Casa casaSelecionada = (Casa)casaDataGridView.CurrentRow.DataBoundItem;
+
+            GerirLimpezas gerirLimpezas = new GerirLimpezas(context, casaSelecionada);
 
             gerirLimpezas.Show();
         }

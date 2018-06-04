@@ -12,9 +12,15 @@ namespace GCC
 {
     public partial class GerirLimpezas : Form
     {
-        public GerirLimpezas()
+        private GCCDMContainer context;
+        private Casa casa;
+
+        public GerirLimpezas(GCCDMContainer context, Casa casa)
         {
             InitializeComponent();
+
+            this.context = context;
+            this.casa = casa;
         }
 
         private void idClienteTextBox_TextChanged(object sender, EventArgs e)

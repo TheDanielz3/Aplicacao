@@ -42,3 +42,4 @@ C:\Users\danie\Desktop\GCC\GCC\obj\Debug\GCC.exe
 C:\Users\danie\Desktop\GCC\GCC\obj\Debug\GCC.pdb
 C:\Users\Diogo\Desktop\GCC\GCC\obj\Debug\GCC.GerirArrendamentos.resources
 C:\Users\Diogo\Desktop\GCC\GCC\obj\Debug\GCC.GerirCasas.resources
+C:\Users\Diogo\Desktop\GCC\GCC\obj\Debug\GCC.GerirVendas.resources
