@@ -26,7 +26,6 @@ C:\Users\danie\Desktop\GCC\GCC\bin\Debug\EntityFramework.dll
 C:\Users\danie\Desktop\GCC\GCC\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\danie\Desktop\GCC\GCC\bin\Debug\EntityFramework.xml
 C:\Users\danie\Desktop\GCC\GCC\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\danie\Desktop\GCC\GCC\obj\Debug\GCC.csprojAssemblyReference.cache
 C:\Users\danie\Desktop\GCC\GCC\obj\Debug\GCC.GerirArrendamentos.resources
 C:\Users\danie\Desktop\GCC\GCC\obj\Debug\GCC.GerirCasas.resources
 C:\Users\danie\Desktop\GCC\GCC\obj\Debug\GCC.GerirClientes.resources
@@ -40,3 +39,6 @@ C:\Users\danie\Desktop\GCC\GCC\obj\Debug\pt-PT\GCC.resources.dll
 C:\Users\danie\Desktop\GCC\GCC\obj\Debug\GCC.csproj.CopyComplete
 C:\Users\danie\Desktop\GCC\GCC\obj\Debug\GCC.exe
 C:\Users\danie\Desktop\GCC\GCC\obj\Debug\GCC.pdb
+C:\Users\Diogo\Desktop\GCC\GCC\obj\Debug\GCC.GerirArrendamentos.resources
+C:\Users\Diogo\Desktop\GCC\GCC\obj\Debug\GCC.GerirCasas.resources
+C:\Users\danie\Desktop\GCC\GCC\obj\Debug\GCC.csprojAssemblyReference.cache

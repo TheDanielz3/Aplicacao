@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GerirLimpezas));
             System.Windows.Forms.Label descricaoLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GerirLimpezas));
             System.Windows.Forms.Label unidadesLabel;
             this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.limpezaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.buttonCriar = new System.Windows.Forms.Button();
+            this.buttonCriarFatura = new System.Windows.Forms.Button();
             this.buttonEmitirFatura = new System.Windows.Forms.Button();
             this.servicosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.servicosListBox = new System.Windows.Forms.ListBox();
             this.limpezaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.limpezaListBox = new System.Windows.Forms.ListBox();
             this.groupBoxDetalhesLimpeza = new System.Windows.Forms.GroupBox();
+            this.buttonInserirServico = new System.Windows.Forms.Button();
+            this.unidadesDomainUpDown = new System.Windows.Forms.DomainUpDown();
             this.servicoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.descricaoComboBox = new System.Windows.Forms.ComboBox();
-            this.unidadesDomainUpDown = new System.Windows.Forms.DomainUpDown();
-            this.buttonInserirServico = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelNomeCasa = new System.Windows.Forms.Label();
             descricaoLabel = new System.Windows.Forms.Label();
             unidadesLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
@@ -56,6 +56,16 @@
             this.groupBoxDetalhesLimpeza.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.servicoBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // descricaoLabel
+            // 
+            resources.ApplyResources(descricaoLabel, "descricaoLabel");
+            descricaoLabel.Name = "descricaoLabel";
+            // 
+            // unidadesLabel
+            // 
+            resources.ApplyResources(unidadesLabel, "unidadesLabel");
+            unidadesLabel.Name = "unidadesLabel";
             // 
             // clienteBindingSource
             // 
@@ -71,17 +81,19 @@
             resources.ApplyResources(this.dataDateTimePicker, "dataDateTimePicker");
             this.dataDateTimePicker.Name = "dataDateTimePicker";
             // 
-            // buttonCriar
+            // buttonCriarFatura
             // 
-            resources.ApplyResources(this.buttonCriar, "buttonCriar");
-            this.buttonCriar.Name = "buttonCriar";
-            this.buttonCriar.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.buttonCriarFatura, "buttonCriarFatura");
+            this.buttonCriarFatura.Name = "buttonCriarFatura";
+            this.buttonCriarFatura.UseVisualStyleBackColor = true;
+            this.buttonCriarFatura.Click += new System.EventHandler(this.buttonCriar_Click);
             // 
             // buttonEmitirFatura
             // 
             resources.ApplyResources(this.buttonEmitirFatura, "buttonEmitirFatura");
             this.buttonEmitirFatura.Name = "buttonEmitirFatura";
             this.buttonEmitirFatura.UseVisualStyleBackColor = true;
+            this.buttonEmitirFatura.Click += new System.EventHandler(this.buttonEmitirFatura_Click);
             // 
             // servicosBindingSource
             // 
@@ -91,6 +103,7 @@
             // servicosListBox
             // 
             this.servicosListBox.DataSource = this.servicosBindingSource;
+            this.servicosListBox.DisplayMember = "Descricao";
             this.servicosListBox.FormattingEnabled = true;
             resources.ApplyResources(this.servicosListBox, "servicosListBox");
             this.servicosListBox.Name = "servicosListBox";
@@ -122,14 +135,22 @@
             this.groupBoxDetalhesLimpeza.Name = "groupBoxDetalhesLimpeza";
             this.groupBoxDetalhesLimpeza.TabStop = false;
             // 
+            // buttonInserirServico
+            // 
+            resources.ApplyResources(this.buttonInserirServico, "buttonInserirServico");
+            this.buttonInserirServico.Name = "buttonInserirServico";
+            this.buttonInserirServico.UseVisualStyleBackColor = true;
+            this.buttonInserirServico.Click += new System.EventHandler(this.buttonInserirServico_Click);
+            // 
+            // unidadesDomainUpDown
+            // 
+            this.unidadesDomainUpDown.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.servicoBindingSource, "Unidades", true));
+            resources.ApplyResources(this.unidadesDomainUpDown, "unidadesDomainUpDown");
+            this.unidadesDomainUpDown.Name = "unidadesDomainUpDown";
+            // 
             // servicoBindingSource
             // 
             this.servicoBindingSource.DataSource = typeof(GCC.Servico);
-            // 
-            // descricaoLabel
-            // 
-            resources.ApplyResources(descricaoLabel, "descricaoLabel");
-            descricaoLabel.Name = "descricaoLabel";
             // 
             // descricaoComboBox
             // 
@@ -138,36 +159,19 @@
             resources.ApplyResources(this.descricaoComboBox, "descricaoComboBox");
             this.descricaoComboBox.Name = "descricaoComboBox";
             // 
-            // unidadesLabel
+            // labelNomeCasa
             // 
-            resources.ApplyResources(unidadesLabel, "unidadesLabel");
-            unidadesLabel.Name = "unidadesLabel";
-            // 
-            // unidadesDomainUpDown
-            // 
-            this.unidadesDomainUpDown.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.servicoBindingSource, "Unidades", true));
-            resources.ApplyResources(this.unidadesDomainUpDown, "unidadesDomainUpDown");
-            this.unidadesDomainUpDown.Name = "unidadesDomainUpDown";
-            // 
-            // buttonInserirServico
-            // 
-            resources.ApplyResources(this.buttonInserirServico, "buttonInserirServico");
-            this.buttonInserirServico.Name = "buttonInserirServico";
-            this.buttonInserirServico.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
+            resources.ApplyResources(this.labelNomeCasa, "labelNomeCasa");
+            this.labelNomeCasa.Name = "labelNomeCasa";
             // 
             // GerirLimpezas
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelNomeCasa);
             this.Controls.Add(this.limpezaListBox);
             this.Controls.Add(this.buttonEmitirFatura);
-            this.Controls.Add(this.buttonCriar);
+            this.Controls.Add(this.buttonCriarFatura);
             this.Controls.Add(this.dataDateTimePicker);
             this.Controls.Add(this.groupBoxDetalhesLimpeza);
             this.Name = "GerirLimpezas";
@@ -189,7 +193,7 @@
         private System.Windows.Forms.BindingSource clienteBindingSource;
         private System.Windows.Forms.BindingSource limpezaBindingSource;
         private System.Windows.Forms.DateTimePicker dataDateTimePicker;
-        private System.Windows.Forms.Button buttonCriar;
+        private System.Windows.Forms.Button buttonCriarFatura;
         private System.Windows.Forms.Button buttonEmitirFatura;
         private System.Windows.Forms.BindingSource servicosBindingSource;
         private System.Windows.Forms.ListBox servicosListBox;
@@ -200,6 +204,6 @@
         private System.Windows.Forms.DomainUpDown unidadesDomainUpDown;
         private System.Windows.Forms.BindingSource servicoBindingSource;
         private System.Windows.Forms.ComboBox descricaoComboBox;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelNomeCasa;
     }
 }

@@ -66,6 +66,9 @@
     <Compile Include="CasaVendavel.cs">
       <DependentUpon>GCCDM.tt</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Casa.cs" />
+    <Compile Include="Classes\Cliente.cs" />
+    <Compile Include="Classes\Limpeza.cs" />
     <Compile Include="Cliente.cs">
       <DependentUpon>GCCDM.tt</DependentUpon>
     </Compile>
@@ -98,6 +101,12 @@
     </Compile>
     <Compile Include="GerirLimpezas.Designer.cs">
       <DependentUpon>GerirLimpezas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerirVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerirVendas.Designer.cs">
+      <DependentUpon>GerirVendas.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>

@@ -42,6 +42,7 @@
             this.buttonGerirClientes.Text = "Gerir Clientes";
             this.buttonGerirClientes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonGerirClientes.UseVisualStyleBackColor = true;
+            this.buttonGerirClientes.Click += new System.EventHandler(this.buttonGerirClientes_Click);
             // 
             // buttonGerirCasas
             // 
@@ -52,6 +53,7 @@
             this.buttonGerirCasas.Text = "Gerir Casas";
             this.buttonGerirCasas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonGerirCasas.UseVisualStyleBackColor = true;
+            this.buttonGerirCasas.Click += new System.EventHandler(this.buttonGerirCasas_Click);
             // 
             // labelGCC
             // 
@@ -72,8 +74,13 @@
             this.Controls.Add(this.labelGCC);
             this.Controls.Add(this.buttonGerirCasas);
             this.Controls.Add(this.buttonGerirClientes);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Menu";
-            this.Text = "GCC";
+            this.Text = " ";
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
