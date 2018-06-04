@@ -626,6 +626,7 @@
             this.Controls.Add(this.buttonApagarCasa);
             this.Controls.Add(this.groupBoxDetalhesCasas);
             this.Controls.Add(this.casaDataGridView);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "GerirCasas";

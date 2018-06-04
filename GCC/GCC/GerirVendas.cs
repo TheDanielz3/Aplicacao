@@ -21,8 +21,39 @@ namespace GCC
 
             this.context = context;
             this.casaSelecionada = casaSelecionada;
+            
+            labelProprietarioInfo.Text = casaSelecionada.Proprietario.ToString();
+            labelBaseInfo.Text = casaSelecionada.ValorBaseVenda.ToString();
+            labelComissaoBaseInfo.Text = casaSelecionada.ValorComissao.ToString();
 
-            this.context.CasaSet.ToList();
+            compradorComboBox.DataSource = context.ClienteSet.ToList();
+            //Passa para lista
+            context.VendaSet.ToList();
+        }
+
+        private void GerirVendas_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        //Efetiva a venda da casa
+        private void buttonEfetivarVenda_Click(object sender, EventArgs e)
+        {
+            
+            Venda novaVenda = new Venda();
+
+            novaVenda.DataVenda = dataVendaDateTimePicker.Value.ToString();
+            novaVenda.ValorNegociado = valorNegociadoTextBox.Text;
+            novaVenda.ComissaoNegocio = comissaoNegocioTextBox.Text;
+            novaVenda.Comprador = ((Cliente)compradorComboBox.SelectedItem);
+
+
+            // casaSelecionada.Venda.DataVenda = dataVendaDateTimePicker.Value.ToString();
+
+
+           casaSelecionada.Venda = novaVenda;
+       
+            context.SaveChanges();
         }
     }
 }

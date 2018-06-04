@@ -28,7 +28,7 @@ namespace GCC
             labelLocalidade.Text = casa.Localidade.ToString();
             labelProprietario.Text = casa.Proprietario.ToString();
 
-            casaArrendavelListBox.DataSource = context.ArrendamentoSet.ToList();
+            casaArrendavelListBox.DataSource = casa.Arrendamentos.ToList();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -69,6 +69,8 @@ namespace GCC
         //Inserir arrendamentos
         private void buttonInserirArrendamento_Click(object sender, EventArgs e)
         {
+            Arrendamento arrendamentoSelecionado = (Arrendamento)casaArrendavelListBox.SelectedItem;
+
             Arrendamento novoArrendamento = new Arrendamento();
             novoArrendamento.InicioContrato = inicioContratoDateTimePicker.Value.ToString();
             novoArrendamento.DuracaoMeses = duracaoMesesNumericUpDown.Value.ToString();
@@ -81,13 +83,14 @@ namespace GCC
             {
                 novoArrendamento.Renovavel = " Não ";
             }
+
             
             novoArrendamento.Arrendatario = ((Cliente)arrendatarioComboBox.SelectedItem);
 
-            context.ArrendamentoSet.Add(novoArrendamento);
+            casa.Arrendamentos.Add(novoArrendamento);
             context.SaveChanges();
 
-            casaArrendavelListBox.DataSource = context.ArrendamentoSet.ToList();
+            casaArrendavelListBox.DataSource = casa.Arrendamentos.ToList();
 
             return;
         }
@@ -119,12 +122,12 @@ namespace GCC
         //Remover arrendamento
         private void buttonRemoverArrendamento_Click(object sender, EventArgs e)
         {
-            Arrendamento casaSelecionada = (Arrendamento)casaArrendavelListBox.SelectedItem;
+            Arrendamento arrendamento = (Arrendamento)casaArrendavelListBox.SelectedItem;
 
-            context.ArrendamentoSet.Remove(casaSelecionada);
+            casa.Arrendamentos.Remove(arrendamento);
             context.SaveChanges();
 
-            casaArrendavelListBox.DataSource = context.ArrendamentoSet.ToList();
+            casaArrendavelListBox.DataSource = casa.Arrendamentos.ToList();
         }
     }
 }

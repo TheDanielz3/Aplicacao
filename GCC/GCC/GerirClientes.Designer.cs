@@ -116,7 +116,7 @@
             this.clienteDataGridView.Name = "clienteDataGridView";
             this.clienteDataGridView.ReadOnly = true;
             this.clienteDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.clienteDataGridView.Size = new System.Drawing.Size(441, 458);
+            this.clienteDataGridView.Size = new System.Drawing.Size(441, 436);
             this.clienteDataGridView.TabIndex = 1;
             this.clienteDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.clienteDataGridView_CellContentClick);
             // 
@@ -202,7 +202,7 @@
             this.groupBoxDetalhesCliente.Controls.Add(nomeLabel);
             this.groupBoxDetalhesCliente.Controls.Add(this.button1);
             this.groupBoxDetalhesCliente.Controls.Add(this.nomeTextBox);
-            this.groupBoxDetalhesCliente.Location = new System.Drawing.Point(570, 125);
+            this.groupBoxDetalhesCliente.Location = new System.Drawing.Point(488, 114);
             this.groupBoxDetalhesCliente.Name = "groupBoxDetalhesCliente";
             this.groupBoxDetalhesCliente.Size = new System.Drawing.Size(300, 503);
             this.groupBoxDetalhesCliente.TabIndex = 12;
@@ -285,7 +285,7 @@
             // 
             this.textBoxFilterCliente.Location = new System.Drawing.Point(12, 29);
             this.textBoxFilterCliente.Name = "textBoxFilterCliente";
-            this.textBoxFilterCliente.Size = new System.Drawing.Size(510, 20);
+            this.textBoxFilterCliente.Size = new System.Drawing.Size(441, 20);
             this.textBoxFilterCliente.TabIndex = 14;
             // 
             // comboBoxCliente
@@ -309,7 +309,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(12, 590);
+            this.button3.Location = new System.Drawing.Point(12, 569);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(441, 49);
             this.button3.TabIndex = 13;
@@ -321,13 +321,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(894, 656);
+            this.ClientSize = new System.Drawing.Size(804, 630);
             this.Controls.Add(this.buttonFiltrar);
             this.Controls.Add(this.comboBoxCliente);
             this.Controls.Add(this.textBoxFilterCliente);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.clienteDataGridView);
             this.Controls.Add(this.groupBoxDetalhesCliente);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "GerirClientes";

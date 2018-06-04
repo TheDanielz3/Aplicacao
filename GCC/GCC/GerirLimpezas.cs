@@ -18,9 +18,13 @@ namespace GCC
         public GerirLimpezas(GCCDMContainer context, Casa casa)
         {
             InitializeComponent();
+            descricaoComboBox.Items.Add("Limpeza rápida 5€");
+            descricaoComboBox.Items.Add("Limpeza completa 10 €");
 
             this.context = context;
             this.casa = casa;
+
+            labelNomeCasa.Text = casa.Localidade.ToString();
         }
 
         private void idClienteTextBox_TextChanged(object sender, EventArgs e)
@@ -64,6 +68,38 @@ namespace GCC
         }
 
         private void limpezaListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        //Inserir serviço
+        private void buttonInserirServico_Click(object sender, EventArgs e)
+        {
+            Limpeza limpezaSelecionada = (Limpeza)limpezaListBox.SelectedItem;
+
+            Servico tempServico = new Servico();
+
+            tempServico.Descricao = descricaoComboBox.SelectedItem.ToString();
+
+            servicosListBox.DataSource = null;
+            servicosListBox.DataSource = limpezaSelecionada.Servicos.ToList();
+        }
+
+        //Criar fatura
+        private void buttonCriar_Click(object sender, EventArgs e)
+        {
+            Limpeza novaLimpeza = new Limpeza();
+
+            novaLimpeza.Data = dataDateTimePicker.Value.ToString();
+
+            casa.Limpezas.Add(novaLimpeza);
+
+            limpezaListBox.DataSource = null;
+            limpezaListBox.DataSource = casa.Limpezas.ToList();
+        }
+
+        //Emitir fatura
+        private void buttonEmitirFatura_Click(object sender, EventArgs e)
         {
 
         }

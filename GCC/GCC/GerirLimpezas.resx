@@ -117,20 +117,80 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="descricaoLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="descricaoLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="descricaoLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 38</value>
+  </data>
+  <data name="descricaoLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 13</value>
+  </data>
+  <data name="descricaoLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="descricaoLabel.Text" xml:space="preserve">
+    <value>Descricao:</value>
+  </data>
+  <data name="&gt;&gt;descricaoLabel.Name" xml:space="preserve">
+    <value>descricaoLabel</value>
+  </data>
+  <data name="&gt;&gt;descricaoLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;descricaoLabel.Parent" xml:space="preserve">
+    <value>groupBoxDetalhesLimpeza</value>
+  </data>
+  <data name="&gt;&gt;descricaoLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="unidadesLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="unidadesLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="unidadesLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>191, 36</value>
+  </data>
+  <data name="unidadesLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 13</value>
+  </data>
+  <data name="unidadesLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="unidadesLabel.Text" xml:space="preserve">
+    <value>Unidades:</value>
+  </data>
+  <data name="&gt;&gt;unidadesLabel.Name" xml:space="preserve">
+    <value>unidadesLabel</value>
+  </data>
+  <data name="&gt;&gt;unidadesLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;unidadesLabel.Parent" xml:space="preserve">
+    <value>groupBoxDetalhesLimpeza</value>
+  </data>
+  <data name="&gt;&gt;unidadesLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="clienteBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <metadata name="limpezaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>183, 17</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="dataDateTimePicker.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 588</value>
   </data>
   <data name="dataDateTimePicker.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 20</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="dataDateTimePicker.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
@@ -242,12 +302,18 @@
   <data name="&gt;&gt;limpezaListBox.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="unidadesLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="descricaoLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
+  <data name="buttonInserirServico.Location" type="System.Drawing.Point, System.Drawing">
+    <value>392, 33</value>
+  </data>
+  <data name="buttonInserirServico.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="buttonInserirServico.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="buttonInserirServico.Text" xml:space="preserve">
+    <value>Inserir</value>
+  </data>
   <data name="&gt;&gt;buttonInserirServico.Name" xml:space="preserve">
     <value>buttonInserirServico</value>
   </data>
@@ -260,17 +326,20 @@
   <data name="&gt;&gt;buttonInserirServico.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;unidadesLabel.Name" xml:space="preserve">
-    <value>unidadesLabel</value>
+  <metadata name="servicoBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>708, 17</value>
+  </metadata>
+  <data name="unidadesDomainUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 36</value>
   </data>
-  <data name="&gt;&gt;unidadesLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="unidadesDomainUpDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 20</value>
   </data>
-  <data name="&gt;&gt;unidadesLabel.Parent" xml:space="preserve">
-    <value>groupBoxDetalhesLimpeza</value>
+  <data name="unidadesDomainUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;unidadesLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="unidadesDomainUpDown.Text" xml:space="preserve">
+    <value>domainUpDown1</value>
   </data>
   <data name="&gt;&gt;unidadesDomainUpDown.Name" xml:space="preserve">
     <value>unidadesDomainUpDown</value>
@@ -284,17 +353,14 @@
   <data name="&gt;&gt;unidadesDomainUpDown.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;descricaoLabel.Name" xml:space="preserve">
-    <value>descricaoLabel</value>
+  <data name="descricaoComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 35</value>
   </data>
-  <data name="&gt;&gt;descricaoLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="descricaoComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
   </data>
-  <data name="&gt;&gt;descricaoLabel.Parent" xml:space="preserve">
-    <value>groupBoxDetalhesLimpeza</value>
-  </data>
-  <data name="&gt;&gt;descricaoLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="descricaoComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;descricaoComboBox.Name" xml:space="preserve">
     <value>descricaoComboBox</value>
@@ -332,166 +398,31 @@
   <data name="&gt;&gt;groupBoxDetalhesLimpeza.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <metadata name="servicoBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>708, 17</value>
-  </metadata>
-  <metadata name="descricaoLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <data name="descricaoLabel.AutoSize" type="System.Boolean, mscorlib">
+  <data name="labelNomeCasa.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="descricaoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 38</value>
-  </data>
-  <data name="descricaoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 13</value>
-  </data>
-  <data name="descricaoLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="descricaoLabel.Text" xml:space="preserve">
-    <value>Descricao:</value>
-  </data>
-  <data name="&gt;&gt;descricaoLabel.Name" xml:space="preserve">
-    <value>descricaoLabel</value>
-  </data>
-  <data name="&gt;&gt;descricaoLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;descricaoLabel.Parent" xml:space="preserve">
-    <value>groupBoxDetalhesLimpeza</value>
-  </data>
-  <data name="&gt;&gt;descricaoLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="descricaoComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 35</value>
-  </data>
-  <data name="descricaoComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 21</value>
-  </data>
-  <data name="descricaoComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;descricaoComboBox.Name" xml:space="preserve">
-    <value>descricaoComboBox</value>
-  </data>
-  <data name="&gt;&gt;descricaoComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;descricaoComboBox.Parent" xml:space="preserve">
-    <value>groupBoxDetalhesLimpeza</value>
-  </data>
-  <data name="&gt;&gt;descricaoComboBox.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <metadata name="unidadesLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <data name="unidadesLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="unidadesLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>191, 36</value>
-  </data>
-  <data name="unidadesLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 13</value>
-  </data>
-  <data name="unidadesLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="unidadesLabel.Text" xml:space="preserve">
-    <value>Unidades:</value>
-  </data>
-  <data name="&gt;&gt;unidadesLabel.Name" xml:space="preserve">
-    <value>unidadesLabel</value>
-  </data>
-  <data name="&gt;&gt;unidadesLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;unidadesLabel.Parent" xml:space="preserve">
-    <value>groupBoxDetalhesLimpeza</value>
-  </data>
-  <data name="&gt;&gt;unidadesLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <metadata name="servicoBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>708, 17</value>
-  </metadata>
-  <data name="unidadesDomainUpDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>252, 36</value>
-  </data>
-  <data name="unidadesDomainUpDown.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 20</value>
-  </data>
-  <data name="unidadesDomainUpDown.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="unidadesDomainUpDown.Text" xml:space="preserve">
-    <value>domainUpDown1</value>
-  </data>
-  <data name="&gt;&gt;unidadesDomainUpDown.Name" xml:space="preserve">
-    <value>unidadesDomainUpDown</value>
-  </data>
-  <data name="&gt;&gt;unidadesDomainUpDown.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DomainUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;unidadesDomainUpDown.Parent" xml:space="preserve">
-    <value>groupBoxDetalhesLimpeza</value>
-  </data>
-  <data name="&gt;&gt;unidadesDomainUpDown.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="buttonInserirServico.Location" type="System.Drawing.Point, System.Drawing">
-    <value>392, 33</value>
-  </data>
-  <data name="buttonInserirServico.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="buttonInserirServico.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="buttonInserirServico.Text" xml:space="preserve">
-    <value>Inserir</value>
-  </data>
-  <data name="&gt;&gt;buttonInserirServico.Name" xml:space="preserve">
-    <value>buttonInserirServico</value>
-  </data>
-  <data name="&gt;&gt;buttonInserirServico.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonInserirServico.Parent" xml:space="preserve">
-    <value>groupBoxDetalhesLimpeza</value>
-  </data>
-  <data name="&gt;&gt;buttonInserirServico.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="labelNomeCasa.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 22</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="labelNomeCasa.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 13</value>
   </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+  <data name="labelNomeCasa.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
+  <data name="labelNomeCasa.Text" xml:space="preserve">
     <value>Base: sem base</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
+  <data name="&gt;&gt;labelNomeCasa.Name" xml:space="preserve">
+    <value>labelNomeCasa</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+  <data name="&gt;&gt;labelNomeCasa.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;labelNomeCasa.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;labelNomeCasa.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -507,7 +438,7 @@
     <value>826, 631</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value> Limpezas</value>
+    <value>Limpezas</value>
   </data>
   <data name="&gt;&gt;clienteBindingSource.Name" xml:space="preserve">
     <value>clienteBindingSource</value>

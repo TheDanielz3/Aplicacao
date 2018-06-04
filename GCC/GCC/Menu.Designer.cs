@@ -75,11 +75,11 @@
             this.Controls.Add(this.buttonGerirCasas);
             this.Controls.Add(this.buttonGerirClientes);
             this.Cursor = System.Windows.Forms.Cursors.Default;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Menu";
-            this.Text = " ";
+            this.Text = "GCC";
             this.Load += new System.EventHandler(this.Menu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
