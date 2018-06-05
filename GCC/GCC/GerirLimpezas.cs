@@ -96,11 +96,14 @@ namespace GCC
 
             Servico servicotemp = new Servico();
 
+            servicotemp.Descricao = Convert.ToString(descricaoComboBox.SelectedIndex);
 
-            servicotemp.Descricao = labelNomeCasa.Text;
+            limpezaselecionada.Servicos.Add(servicotemp);
+
+            
 
             servicosListBox.DataSource = null;
-            servicosListBox.Items.Add(servicotemp);
+            
             context.SaveChanges();
 
             //update listbox
@@ -113,6 +116,8 @@ namespace GCC
         {
             StreamWriter exportar = new StreamWriter("fatura.txt",true);
             exportar.WriteLine("ola");
+
+
 
             exportar.Close();
         }
@@ -130,6 +135,11 @@ namespace GCC
 
             limpezaListBox.DataSource = null;
             limpezaListBox.DataSource = casaselecionada.Limpezas.ToList();
+        }
+        // Dont touch this
+        private void descricaoComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -158,6 +158,7 @@
             this.descricaoComboBox.FormattingEnabled = true;
             resources.ApplyResources(this.descricaoComboBox, "descricaoComboBox");
             this.descricaoComboBox.Name = "descricaoComboBox";
+            this.descricaoComboBox.SelectedIndexChanged += new System.EventHandler(this.descricaoComboBox_SelectedIndexChanged);
             // 
             // labelNomeCasa
             // 

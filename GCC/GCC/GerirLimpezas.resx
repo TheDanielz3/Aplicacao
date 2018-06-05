@@ -302,66 +302,6 @@
   <data name="&gt;&gt;limpezaListBox.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;buttonInserirServico.Name" xml:space="preserve">
-    <value>buttonInserirServico</value>
-  </data>
-  <data name="&gt;&gt;buttonInserirServico.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonInserirServico.Parent" xml:space="preserve">
-    <value>groupBoxDetalhesLimpeza</value>
-  </data>
-  <data name="&gt;&gt;buttonInserirServico.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;unidadesDomainUpDown.Name" xml:space="preserve">
-    <value>unidadesDomainUpDown</value>
-  </data>
-  <data name="&gt;&gt;unidadesDomainUpDown.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DomainUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;unidadesDomainUpDown.Parent" xml:space="preserve">
-    <value>groupBoxDetalhesLimpeza</value>
-  </data>
-  <data name="&gt;&gt;unidadesDomainUpDown.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;descricaoComboBox.Name" xml:space="preserve">
-    <value>descricaoComboBox</value>
-  </data>
-  <data name="&gt;&gt;descricaoComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;descricaoComboBox.Parent" xml:space="preserve">
-    <value>groupBoxDetalhesLimpeza</value>
-  </data>
-  <data name="&gt;&gt;descricaoComboBox.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="groupBoxDetalhesLimpeza.Location" type="System.Drawing.Point, System.Drawing">
-    <value>330, 87</value>
-  </data>
-  <data name="groupBoxDetalhesLimpeza.Size" type="System.Drawing.Size, System.Drawing">
-    <value>483, 509</value>
-  </data>
-  <data name="groupBoxDetalhesLimpeza.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="groupBoxDetalhesLimpeza.Text" xml:space="preserve">
-    <value>Detalhes da Limpeza</value>
-  </data>
-  <data name="&gt;&gt;groupBoxDetalhesLimpeza.Name" xml:space="preserve">
-    <value>groupBoxDetalhesLimpeza</value>
-  </data>
-  <data name="&gt;&gt;groupBoxDetalhesLimpeza.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxDetalhesLimpeza.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBoxDetalhesLimpeza.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="buttonInserirServico.Location" type="System.Drawing.Point, System.Drawing">
     <value>392, 33</value>
   </data>
@@ -413,9 +353,6 @@
   <data name="&gt;&gt;unidadesDomainUpDown.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <metadata name="servicoBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>708, 17</value>
-  </metadata>
   <data name="descricaoComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>64, 35</value>
   </data>
@@ -436,6 +373,30 @@
   </data>
   <data name="&gt;&gt;descricaoComboBox.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="groupBoxDetalhesLimpeza.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 87</value>
+  </data>
+  <data name="groupBoxDetalhesLimpeza.Size" type="System.Drawing.Size, System.Drawing">
+    <value>483, 509</value>
+  </data>
+  <data name="groupBoxDetalhesLimpeza.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="groupBoxDetalhesLimpeza.Text" xml:space="preserve">
+    <value>Detalhes da Limpeza</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDetalhesLimpeza.Name" xml:space="preserve">
+    <value>groupBoxDetalhesLimpeza</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDetalhesLimpeza.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDetalhesLimpeza.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDetalhesLimpeza.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="labelNomeCasa.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
