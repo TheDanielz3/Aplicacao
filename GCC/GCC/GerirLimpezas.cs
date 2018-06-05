@@ -114,8 +114,6 @@ namespace GCC
             StreamWriter exportar = new StreamWriter("fatura.txt",true);
             exportar.WriteLine("ola");
 
-
-
             exportar.Close();
         }
         //Criar Fatura
