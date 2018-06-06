@@ -20,8 +20,8 @@ namespace GCC
         public GerirLimpezas(Casa casaselecionada,GCCDMContainer context)
         {
             InitializeComponent();
-            descricaoComboBox.Items.Add("Limpeza rapida 5€");
-            descricaoComboBox.Items.Add("Limpeza completa 10€");
+            descricaoComboBox.Items.Add("Limpeza rapida");
+            descricaoComboBox.Items.Add("Limpeza completa");
 
 
             this.casaselecionada = casaselecionada;
@@ -83,10 +83,16 @@ namespace GCC
 
         }
 
-        //Don´t Touch 
+        //update serviço listbox
         private void limpezaListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            Limpeza limpezaselecionada = (Limpeza)limpezaListBox.SelectedItem;
 
+            if (limpezaselecionada != null)
+            {
+                servicosListBox.DataSource = null;
+                servicosListBox.DataSource = limpezaselecionada.Servicos.ToList();
+            }
         }
 
         //Botao Inserir
@@ -96,11 +102,12 @@ namespace GCC
 
             Servico servicotemp = new Servico();
 
-            servicotemp.Descricao = Convert.ToString(descricaoComboBox.SelectedIndex);
+            servicotemp.Descricao = Convert.ToString(descricaoComboBox.SelectedItem);
+            servicotemp.Valor = Convert.ToString(numericUpDownValor.Value);
+            servicotemp.Unidades = Convert.ToString(numericUpDownUnidades.Value);
 
             limpezaselecionada.Servicos.Add(servicotemp);
 
-            
 
             servicosListBox.DataSource = null;
             
@@ -114,12 +121,44 @@ namespace GCC
         //Emitir Fatura(need to do)
         private void buttonEmitirFatura_Click(object sender, EventArgs e)
         {
-            StreamWriter exportar = new StreamWriter("fatura.txt",true);
-            exportar.WriteLine("ola");
+            Limpeza limpesaselecionada = (Limpeza)limpezaListBox.SelectedItem;
 
+            StreamWriter exportar = new StreamWriter("fatura.txt");
+
+
+            exportar.WriteLine("Dono:");
+            exportar.WriteLine((Cliente)casaselecionada.Proprietario);
+            exportar.WriteLine("------------------------");
+
+
+            exportar.WriteLine("Rua:");
+            exportar.WriteLine(casaselecionada.Rua);
+            exportar.WriteLine(",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,");
+
+
+
+                exportar.WriteLine("-.-.-.-.-.-.-.-.-.-.-.-.-.-");
+                exportar.WriteLine("Fatura do dia ");
+                exportar.WriteLine(limpesaselecionada.Data);
+                exportar.WriteLine("Total:");  
+                exportar.WriteLine(limpesaselecionada.Total);
+                exportar.WriteLine(".,.,.,,.,.,.,..,.,.,.,,.,.,");
+                foreach (Servico servicoselecionado in servicosListBox.Items)
+                    {
+                    exportar.WriteLine("Valor");
+                    exportar.WriteLine(servicoselecionado.Valor);
+                    exportar.WriteLine("Descrição:");
+                    exportar.WriteLine(servicoselecionado.Descricao);
+                    }
+                
+           
+            
+            
 
 
             exportar.Close();
+
+            System.Diagnostics.Process.Start("notepad", "fatura.txt");
         }
         //Criar Fatura
         private void buttonCriar_Click(object sender, EventArgs e)

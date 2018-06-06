@@ -42,10 +42,11 @@
             this.limpezaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.limpezaListBox = new System.Windows.Forms.ListBox();
             this.groupBoxDetalhesLimpeza = new System.Windows.Forms.GroupBox();
+            this.numericUpDownValor = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownUnidades = new System.Windows.Forms.NumericUpDown();
             this.buttonInserirServico = new System.Windows.Forms.Button();
-            this.unidadesDomainUpDown = new System.Windows.Forms.DomainUpDown();
-            this.servicoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.descricaoComboBox = new System.Windows.Forms.ComboBox();
+            this.servicoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.labelNomeCasa = new System.Windows.Forms.Label();
             descricaoLabel = new System.Windows.Forms.Label();
             unidadesLabel = new System.Windows.Forms.Label();
@@ -54,6 +55,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.servicosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.limpezaBindingSource1)).BeginInit();
             this.groupBoxDetalhesLimpeza.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownValor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownUnidades)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.servicoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -125,15 +128,26 @@
             // 
             // groupBoxDetalhesLimpeza
             // 
+            this.groupBoxDetalhesLimpeza.Controls.Add(this.numericUpDownValor);
+            this.groupBoxDetalhesLimpeza.Controls.Add(this.numericUpDownUnidades);
             this.groupBoxDetalhesLimpeza.Controls.Add(this.buttonInserirServico);
             this.groupBoxDetalhesLimpeza.Controls.Add(unidadesLabel);
-            this.groupBoxDetalhesLimpeza.Controls.Add(this.unidadesDomainUpDown);
             this.groupBoxDetalhesLimpeza.Controls.Add(descricaoLabel);
             this.groupBoxDetalhesLimpeza.Controls.Add(this.descricaoComboBox);
             this.groupBoxDetalhesLimpeza.Controls.Add(this.servicosListBox);
             resources.ApplyResources(this.groupBoxDetalhesLimpeza, "groupBoxDetalhesLimpeza");
             this.groupBoxDetalhesLimpeza.Name = "groupBoxDetalhesLimpeza";
             this.groupBoxDetalhesLimpeza.TabStop = false;
+            // 
+            // numericUpDownValor
+            // 
+            resources.ApplyResources(this.numericUpDownValor, "numericUpDownValor");
+            this.numericUpDownValor.Name = "numericUpDownValor";
+            // 
+            // numericUpDownUnidades
+            // 
+            resources.ApplyResources(this.numericUpDownUnidades, "numericUpDownUnidades");
+            this.numericUpDownUnidades.Name = "numericUpDownUnidades";
             // 
             // buttonInserirServico
             // 
@@ -142,16 +156,6 @@
             this.buttonInserirServico.UseVisualStyleBackColor = true;
             this.buttonInserirServico.Click += new System.EventHandler(this.buttonInserirServico_Click);
             // 
-            // unidadesDomainUpDown
-            // 
-            this.unidadesDomainUpDown.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.servicoBindingSource, "Unidades", true));
-            resources.ApplyResources(this.unidadesDomainUpDown, "unidadesDomainUpDown");
-            this.unidadesDomainUpDown.Name = "unidadesDomainUpDown";
-            // 
-            // servicoBindingSource
-            // 
-            this.servicoBindingSource.DataSource = typeof(GCC.Servico);
-            // 
             // descricaoComboBox
             // 
             this.descricaoComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.servicoBindingSource, "Descricao", true));
@@ -159,6 +163,10 @@
             resources.ApplyResources(this.descricaoComboBox, "descricaoComboBox");
             this.descricaoComboBox.Name = "descricaoComboBox";
             this.descricaoComboBox.SelectedIndexChanged += new System.EventHandler(this.descricaoComboBox_SelectedIndexChanged);
+            // 
+            // servicoBindingSource
+            // 
+            this.servicoBindingSource.DataSource = typeof(GCC.Servico);
             // 
             // labelNomeCasa
             // 
@@ -183,6 +191,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.limpezaBindingSource1)).EndInit();
             this.groupBoxDetalhesLimpeza.ResumeLayout(false);
             this.groupBoxDetalhesLimpeza.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownValor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownUnidades)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.servicoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -202,9 +212,10 @@
         private System.Windows.Forms.ListBox limpezaListBox;
         private System.Windows.Forms.GroupBox groupBoxDetalhesLimpeza;
         private System.Windows.Forms.Button buttonInserirServico;
-        private System.Windows.Forms.DomainUpDown unidadesDomainUpDown;
         private System.Windows.Forms.BindingSource servicoBindingSource;
         private System.Windows.Forms.ComboBox descricaoComboBox;
         private System.Windows.Forms.Label labelNomeCasa;
+        private System.Windows.Forms.NumericUpDown numericUpDownUnidades;
+        private System.Windows.Forms.NumericUpDown numericUpDownValor;
     }
 }

@@ -147,7 +147,7 @@
     <value>groupBoxDetalhesLimpeza</value>
   </data>
   <data name="&gt;&gt;descricaoLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <metadata name="unidadesLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -177,7 +177,7 @@
     <value>groupBoxDetalhesLimpeza</value>
   </data>
   <data name="&gt;&gt;unidadesLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <metadata name="clienteBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -276,7 +276,7 @@
     <value>groupBoxDetalhesLimpeza</value>
   </data>
   <data name="&gt;&gt;servicosListBox.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <metadata name="limpezaBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>529, 17</value>
@@ -302,17 +302,29 @@
   <data name="&gt;&gt;limpezaListBox.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="buttonInserirServico.Location" type="System.Drawing.Point, System.Drawing">
-    <value>392, 33</value>
+  <data name="&gt;&gt;numericUpDownValor.Name" xml:space="preserve">
+    <value>numericUpDownValor</value>
   </data>
-  <data name="buttonInserirServico.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="&gt;&gt;numericUpDownValor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="buttonInserirServico.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="&gt;&gt;numericUpDownValor.Parent" xml:space="preserve">
+    <value>groupBoxDetalhesLimpeza</value>
   </data>
-  <data name="buttonInserirServico.Text" xml:space="preserve">
-    <value>Inserir</value>
+  <data name="&gt;&gt;numericUpDownValor.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownUnidades.Name" xml:space="preserve">
+    <value>numericUpDownUnidades</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownUnidades.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownUnidades.Parent" xml:space="preserve">
+    <value>groupBoxDetalhesLimpeza</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownUnidades.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;buttonInserirServico.Name" xml:space="preserve">
     <value>buttonInserirServico</value>
@@ -324,43 +336,7 @@
     <value>groupBoxDetalhesLimpeza</value>
   </data>
   <data name="&gt;&gt;buttonInserirServico.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="servicoBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>708, 17</value>
-  </metadata>
-  <data name="unidadesDomainUpDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>252, 36</value>
-  </data>
-  <data name="unidadesDomainUpDown.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 20</value>
-  </data>
-  <data name="unidadesDomainUpDown.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="unidadesDomainUpDown.Text" xml:space="preserve">
-    <value>domainUpDown1</value>
-  </data>
-  <data name="&gt;&gt;unidadesDomainUpDown.Name" xml:space="preserve">
-    <value>unidadesDomainUpDown</value>
-  </data>
-  <data name="&gt;&gt;unidadesDomainUpDown.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DomainUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;unidadesDomainUpDown.Parent" xml:space="preserve">
-    <value>groupBoxDetalhesLimpeza</value>
-  </data>
-  <data name="&gt;&gt;unidadesDomainUpDown.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="descricaoComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 35</value>
-  </data>
-  <data name="descricaoComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 21</value>
-  </data>
-  <data name="descricaoComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
   </data>
   <data name="&gt;&gt;descricaoComboBox.Name" xml:space="preserve">
     <value>descricaoComboBox</value>
@@ -372,7 +348,7 @@
     <value>groupBoxDetalhesLimpeza</value>
   </data>
   <data name="&gt;&gt;descricaoComboBox.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="groupBoxDetalhesLimpeza.Location" type="System.Drawing.Point, System.Drawing">
     <value>330, 87</value>
@@ -398,6 +374,99 @@
   <data name="&gt;&gt;groupBoxDetalhesLimpeza.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="numericUpDownValor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 7</value>
+  </data>
+  <data name="numericUpDownValor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 20</value>
+  </data>
+  <data name="numericUpDownValor.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownValor.Name" xml:space="preserve">
+    <value>numericUpDownValor</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownValor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownValor.Parent" xml:space="preserve">
+    <value>groupBoxDetalhesLimpeza</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownValor.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="numericUpDownUnidades.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 30</value>
+  </data>
+  <data name="numericUpDownUnidades.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 20</value>
+  </data>
+  <data name="numericUpDownUnidades.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownUnidades.Name" xml:space="preserve">
+    <value>numericUpDownUnidades</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownUnidades.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownUnidades.Parent" xml:space="preserve">
+    <value>groupBoxDetalhesLimpeza</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownUnidades.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="buttonInserirServico.Location" type="System.Drawing.Point, System.Drawing">
+    <value>392, 33</value>
+  </data>
+  <data name="buttonInserirServico.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="buttonInserirServico.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="buttonInserirServico.Text" xml:space="preserve">
+    <value>Inserir</value>
+  </data>
+  <data name="&gt;&gt;buttonInserirServico.Name" xml:space="preserve">
+    <value>buttonInserirServico</value>
+  </data>
+  <data name="&gt;&gt;buttonInserirServico.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonInserirServico.Parent" xml:space="preserve">
+    <value>groupBoxDetalhesLimpeza</value>
+  </data>
+  <data name="&gt;&gt;buttonInserirServico.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="servicoBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>708, 17</value>
+  </metadata>
+  <data name="descricaoComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 35</value>
+  </data>
+  <data name="descricaoComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="descricaoComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;descricaoComboBox.Name" xml:space="preserve">
+    <value>descricaoComboBox</value>
+  </data>
+  <data name="&gt;&gt;descricaoComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;descricaoComboBox.Parent" xml:space="preserve">
+    <value>groupBoxDetalhesLimpeza</value>
+  </data>
+  <data name="&gt;&gt;descricaoComboBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="servicoBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>708, 17</value>
+  </metadata>
   <data name="labelNomeCasa.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -438,7 +507,7 @@
     <value>826, 631</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value> Limpezas</value>
+    <value>fffddsofjadflsfladadflafjvfhaskdfasfdsfasdhjaoas</value>
   </data>
   <data name="&gt;&gt;clienteBindingSource.Name" xml:space="preserve">
     <value>clienteBindingSource</value>

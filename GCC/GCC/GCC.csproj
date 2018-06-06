@@ -69,6 +69,7 @@
     <Compile Include="Classes\Casa.cs" />
     <Compile Include="Classes\Cliente.cs" />
     <Compile Include="Classes\Limpeza.cs" />
+    <Compile Include="Classes\Servico.cs" />
     <Compile Include="Cliente.cs">
       <DependentUpon>GCCDM.tt</DependentUpon>
     </Compile>
