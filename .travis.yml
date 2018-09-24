@@ -1,4 +1,6 @@
-language: ruby
-rvm:
- - 2.2
- - jruby
+language: csharp
+solution: GCC.sln
+script:    # the following commands are just examples, use whatever your build process requires
+  - ./build.sh
+  - ./test.sh
+  - grep "Test Results" build.log
